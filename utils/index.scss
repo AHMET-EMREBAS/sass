@@ -20,10 +20,12 @@ $classNameMap: (
     ".#{$name}",
     "[class~='#{$name}:child'] > *",
     "[class~='#{$name}:first-letter']::first-letter",
-    "[class~='#{$name}:only-child']:only-child",
+    // Actions
     "[class~='#{$name}:hover']:hover",
     "[class~='#{$name}:focus']:focus",
     "[class~='#{$name}:active']:active",
+    // Order
+    "[class~='#{$name}:only-child']:only-child",
     "[class~='#{$name}:even']:nth-child(even)",
     "[class~='#{$name}:odd']:nth-child(odd)",
     "[class~='#{$name}:first-child']:first-child",
@@ -35,21 +37,62 @@ $classNameMap: (
     "[class~='#{$name}:not:last-child']:not(:last-child)",
     "[class~='#{$name}:not:last-of-type']:not(:last-of-type)",
     // Child
-    "[class~='#{$name}:child:first-letter'] > *::first-letter",
-    "[class~='#{$name}:child:only-child'] > *:only-child",
+    // Child Actions
     "[class~='#{$name}:child:hover'] > *:hover",
     "[class~='#{$name}:child:focus'] > *:focus",
     "[class~='#{$name}:child:active'] > *:active",
+    // Child Position
+    "[class~='#{$name}:child:first-letter'] > *::first-letter",
     "[class~='#{$name}:child:even'] > *:nth-child(even)",
     "[class~='#{$name}:child:odd'] > *:nth-child(odd)",
+    "[class~='#{$name}:child:only-child'] > *:only-child",
     "[class~='#{$name}:child:first-child'] > *:first-child",
     "[class~='#{$name}:child:last-child'] > *:last-child",
     "[class~='#{$name}:child:last-of-type'] > *:last-of-type",
+    // Child Position Acitons
+    // Hover
+    "[class~='#{$name}:child:only-child:hover'] > *:only-child:hover",
+    "[class~='#{$name}:child:first-child:hover'] > *:first-child:hover",
+    "[class~='#{$name}:child:last-child:hover'] > *:last-child:hover",
+    "[class~='#{$name}:child:last-of-type:hover'] > *:last-of-type:hover",
+    // Focus
+    "[class~='#{$name}:child:only-child:focus'] > *:only-child:focus",
+    "[class~='#{$name}:child:first-child:focus'] > *:first-child:focus",
+    "[class~='#{$name}:child:last-child:focus'] > *:last-child:focus",
+    "[class~='#{$name}:child:last-of-type:focus'] > *:last-of-type:focus",
+
+    // Active
+    "[class~='#{$name}:child:only-child:active'] > *:only-child:active",
+    "[class~='#{$name}:child:first-child:active'] > *:first-child:active",
+    "[class~='#{$name}:child:last-child:active'] > *:last-child:active",
+    "[class~='#{$name}:child:last-of-type:active'] > *:last-of-type:active",
+
     // Not child
     "[class~='#{$name}:not:child:only-child'] > *:not(:only-child)",
     "[class~='#{$name}:not:child:first-child'] > *:not(:first-child)",
     "[class~='#{$name}:not:child:last-child'] > *:not(:last-child)",
-    "[class~='#{$name}:not:child:last-of-type'] > *:not(:last-of-type)"
+    "[class~='#{$name}:not:child:last-of-type'] > *:not(:last-of-type)",
+
+       // Child Position Acitons
+    // Hover
+    "[class~='#{$name}:not:child:only-child:hover'] > *:not(:only-child):hover",
+    "[class~='#{$name}:not:child:first-child:hover'] > *:not(:first-child):hover",
+    "[class~='#{$name}:not:child:last-child:hover'] > *:not(:last-child):hover",
+    "[class~='#{$name}:not:child:last-of-type:hover'] > *:not(:last-of-type):hover",
+    // Focus
+    "[class~='#{$name}:not:child:only-child:focus'] > *:not(:only-child):focus",
+    "[class~='#{$name}:not:child:first-child:focus'] > *:not(:first-child):focus",
+    "[class~='#{$name}:not:child:last-child:focus'] > *:not(:last-child):focus",
+    "[class~='#{$name}:not:child:last-of-type:focus'] > *:not(:last-of-type):focus",
+
+    // Active
+    "[class~='#{$name}:not:child:only-child:active'] > *:not(:only-child):active",
+    "[class~='#{$name}:not:child:first-child:active'] > *:not(:first-child):active",
+    "[class~='#{$name}:not:child:last-child:active'] > *:not(:last-child):active",
+    "[class~='#{$name}:not:child:last-of-type:active'] > *:not(:last-of-type):active",
+
+
+
   );
 }
 
