@@ -18,81 +18,74 @@ $classNameMap: (
 @function selectors($name) {
   @return (
     ".#{$name}",
-    "[class~='#{$name}:child'] > *",
-    "[class~='#{$name}:first-letter']::first-letter",
+    "[class~='#{$name}:'] > *",
+    "[class~='#{$name}:fl']::first-letter",
     // Actions
     "[class~='#{$name}:hover']:hover",
     "[class~='#{$name}:focus']:focus",
     "[class~='#{$name}:active']:active",
     // Order
-    "[class~='#{$name}:only-child']:only-child",
+    "[class~='#{$name}:oc']:only-child",
     "[class~='#{$name}:even']:nth-child(even)",
     "[class~='#{$name}:odd']:nth-child(odd)",
-    "[class~='#{$name}:first-child']:first-child",
-    "[class~='#{$name}:last-child']:last-child",
-    "[class~='#{$name}:last-of-type']:last-of-type",
+    "[class~='#{$name}:fc']:first-child",
+    "[class~='#{$name}:lc']:last-child",
+    "[class~='#{$name}:lft']:last-of-type",
     // Not
-    "[class~='#{$name}:not:only-child']:not(:only-child)",
-    "[class~='#{$name}:not:first-child']:not(:first-child)",
-    "[class~='#{$name}:not:last-child']:not(:last-child)",
-    "[class~='#{$name}:not:last-of-type']:not(:last-of-type)",
+    "[class~='#{$name}:not:oc']:not(:only-child)",
+    "[class~='#{$name}:not:fc']:not(:first-child)",
+    "[class~='#{$name}:not:lc']:not(:last-child)",
+    "[class~='#{$name}:not:lft']:not(:last-of-type)",
     // Child
     // Child Actions
-    "[class~='#{$name}:child:hover'] > *:hover",
-    "[class~='#{$name}:child:focus'] > *:focus",
-    "[class~='#{$name}:child:active'] > *:active",
+    "[class~='#{$name}::hover'] > *:hover",
+    "[class~='#{$name}::focus'] > *:focus",
+    "[class~='#{$name}::active'] > *:active",
     // Child Position
-    "[class~='#{$name}:child:first-letter'] > *::first-letter",
-    "[class~='#{$name}:child:even'] > *:nth-child(even)",
-    "[class~='#{$name}:child:odd'] > *:nth-child(odd)",
-    "[class~='#{$name}:child:only-child'] > *:only-child",
-    "[class~='#{$name}:child:first-child'] > *:first-child",
-    "[class~='#{$name}:child:last-child'] > *:last-child",
-    "[class~='#{$name}:child:last-of-type'] > *:last-of-type",
+    "[class~='#{$name}::fl'] > *::first-letter",
+    "[class~='#{$name}::even'] > *:nth-child(even)",
+    "[class~='#{$name}::odd'] > *:nth-child(odd)",
+    "[class~='#{$name}::oc'] > *:only-child",
+    "[class~='#{$name}::fc'] > *:first-child",
+    "[class~='#{$name}::lc'] > *:last-child",
+    "[class~='#{$name}::lft'] > *:last-of-type",
     // Child Position Acitons
     // Hover
-    "[class~='#{$name}:child:only-child:hover'] > *:only-child:hover",
-    "[class~='#{$name}:child:first-child:hover'] > *:first-child:hover",
-    "[class~='#{$name}:child:last-child:hover'] > *:last-child:hover",
-    "[class~='#{$name}:child:last-of-type:hover'] > *:last-of-type:hover",
+    "[class~='#{$name}::oc:hover'] > *:only-child:hover",
+    "[class~='#{$name}::fc:hover'] > *:first-child:hover",
+    "[class~='#{$name}::lc:hover'] > *:last-child:hover",
+    "[class~='#{$name}::lft:hover'] > *:last-of-type:hover",
     // Focus
-    "[class~='#{$name}:child:only-child:focus'] > *:only-child:focus",
-    "[class~='#{$name}:child:first-child:focus'] > *:first-child:focus",
-    "[class~='#{$name}:child:last-child:focus'] > *:last-child:focus",
-    "[class~='#{$name}:child:last-of-type:focus'] > *:last-of-type:focus",
-
+    "[class~='#{$name}::oc:focus'] > *:only-child:focus",
+    "[class~='#{$name}::fc:focus'] > *:first-child:focus",
+    "[class~='#{$name}::lc:focus'] > *:last-child:focus",
+    "[class~='#{$name}::lft:focus'] > *:last-of-type:focus",
     // Active
-    "[class~='#{$name}:child:only-child:active'] > *:only-child:active",
-    "[class~='#{$name}:child:first-child:active'] > *:first-child:active",
-    "[class~='#{$name}:child:last-child:active'] > *:last-child:active",
-    "[class~='#{$name}:child:last-of-type:active'] > *:last-of-type:active",
-
+    "[class~='#{$name}::oc:active'] > *:only-child:active",
+    "[class~='#{$name}::fc:active'] > *:first-child:active",
+    "[class~='#{$name}::lc:active'] > *:last-child:active",
+    "[class~='#{$name}::lft:active'] > *:last-of-type:active",
     // Not child
-    "[class~='#{$name}:not:child:only-child'] > *:not(:only-child)",
-    "[class~='#{$name}:not:child:first-child'] > *:not(:first-child)",
-    "[class~='#{$name}:not:child:last-child'] > *:not(:last-child)",
-    "[class~='#{$name}:not:child:last-of-type'] > *:not(:last-of-type)",
-
-       // Child Position Acitons
+    "[class~='#{$name}:not::oc'] > *:not(:only-child)",
+    "[class~='#{$name}:not::fc'] > *:not(:first-child)",
+    "[class~='#{$name}:not::lc'] > *:not(:last-child)",
+    "[class~='#{$name}:not::lft'] > *:not(:last-of-type)",
+    // Child Position Acitons
     // Hover
-    "[class~='#{$name}:not:child:only-child:hover'] > *:not(:only-child):hover",
-    "[class~='#{$name}:not:child:first-child:hover'] > *:not(:first-child):hover",
-    "[class~='#{$name}:not:child:last-child:hover'] > *:not(:last-child):hover",
-    "[class~='#{$name}:not:child:last-of-type:hover'] > *:not(:last-of-type):hover",
+    "[class~='#{$name}:not::oc:hover'] > *:not(:only-child):hover",
+    "[class~='#{$name}:not::fc:hover'] > *:not(:first-child):hover",
+    "[class~='#{$name}:not::lc:hover'] > *:not(:last-child):hover",
+    "[class~='#{$name}:not::lft:hover'] > *:not(:last-of-type):hover",
     // Focus
-    "[class~='#{$name}:not:child:only-child:focus'] > *:not(:only-child):focus",
-    "[class~='#{$name}:not:child:first-child:focus'] > *:not(:first-child):focus",
-    "[class~='#{$name}:not:child:last-child:focus'] > *:not(:last-child):focus",
-    "[class~='#{$name}:not:child:last-of-type:focus'] > *:not(:last-of-type):focus",
-
+    "[class~='#{$name}:not::oc:focus'] > *:not(:only-child):focus",
+    "[class~='#{$name}:not::fc:focus'] > *:not(:first-child):focus",
+    "[class~='#{$name}:not::lc:focus'] > *:not(:last-child):focus",
+    "[class~='#{$name}:not::lft:focus'] > *:not(:last-of-type):focus",
     // Active
-    "[class~='#{$name}:not:child:only-child:active'] > *:not(:only-child):active",
-    "[class~='#{$name}:not:child:first-child:active'] > *:not(:first-child):active",
-    "[class~='#{$name}:not:child:last-child:active'] > *:not(:last-child):active",
-    "[class~='#{$name}:not:child:last-of-type:active'] > *:not(:last-of-type):active",
-
-
-
+    "[class~='#{$name}:not::oc:active'] > *:not(:only-child):active",
+    "[class~='#{$name}:not::fc:active'] > *:not(:first-child):active",
+    "[class~='#{$name}:not::lc:active'] > *:not(:last-child):active",
+    "[class~='#{$name}:not::lft:active'] > *:not(:last-of-type):active"
   );
 }
 
@@ -106,10 +99,19 @@ $classNameMap: (
   );
 }
 
-@mixin createRules($property, $value, $suffix: "") {
-  $props: props(get($classNameMap, $property), $property, $value, $suffix);
+// @mixin createRules($property, $value, $suffix: "") {
+//   $props: props(get($classNameMap, $property), $property, $value, $suffix);
 
-  #{get($props, "selectors")} {
-    #{get($props ,"property")}: #{get($props, "value")};
-  }
-}
+//   $selectors: get($props, "selectors");
+
+//   .some {
+//     color: list.nth($selectors, 1);
+//   }
+//   // #{}-x {
+//   //   #{get($props ,"property")}: #{get($props, "value")};
+//   // }
+
+//   #{$selectors} {
+//     #{get($props ,"property")}: #{get($props, "value")};
+//   }
+// }

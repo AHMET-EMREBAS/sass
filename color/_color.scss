@@ -1,5 +1,6 @@
 @use "vars" as vars;
 @use "../utils" as utils;
+@use "sass:list";
 
 @function __variants($value) {
   @return (
@@ -15,7 +16,16 @@
 @mixin create($name, $color) {
   $primaryVariants: __variants($color);
 
-  #{utils.selectors(#{$name})} {
+  $selectors: utils.selectors(#{$name});
+
+  .#{$name} {
+    color: #{$color};
+  }
+  .bg-#{$name} {
+    background-color: #{$color};
+  }
+
+  #{$selectors} {
     color: #{$color};
   }
 
