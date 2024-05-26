@@ -1,0 +1,72 @@
+@use "sass:map";
+
+// Property to Class Map
+$classNameMap: (
+  color: c,
+  background-color: bg,
+  border-color: b,
+  border-left-color: bl,
+  border-right-color: br,
+  border-top-color: bt,
+  border-bottom-color: bb,
+);
+
+@function get($props, $key) {
+  @return map.get($props, $key);
+}
+
+@function selectors($name) {
+  @return (
+    ".#{$name}",
+    "[class~='#{$name}:child'] > *",
+    "[class~='#{$name}:first-letter']::first-letter",
+    "[class~='#{$name}:only-child']:only-child",
+    "[class~='#{$name}:hover']:hover",
+    "[class~='#{$name}:focus']:focus",
+    "[class~='#{$name}:active']:active",
+    "[class~='#{$name}:even']:nth-child(even)",
+    "[class~='#{$name}:odd']:nth-child(odd)",
+    "[class~='#{$name}:first-child']:first-child",
+    "[class~='#{$name}:last-child']:last-child",
+    "[class~='#{$name}:last-of-type']:last-of-type",
+    // Not
+    "[class~='#{$name}:not:only-child']:not(:only-child)",
+    "[class~='#{$name}:not:first-child']:not(:first-child)",
+    "[class~='#{$name}:not:last-child']:not(:last-child)",
+    "[class~='#{$name}:not:last-of-type']:not(:last-of-type)",
+    // Child
+    "[class~='#{$name}:child:first-letter'] > *::first-letter",
+    "[class~='#{$name}:child:only-child'] > *:only-child",
+    "[class~='#{$name}:child:hover'] > *:hover",
+    "[class~='#{$name}:child:focus'] > *:focus",
+    "[class~='#{$name}:child:active'] > *:active",
+    "[class~='#{$name}:child:even'] > *:nth-child(even)",
+    "[class~='#{$name}:child:odd'] > *:nth-child(odd)",
+    "[class~='#{$name}:child:first-child'] > *:first-child",
+    "[class~='#{$name}:child:last-child'] > *:last-child",
+    "[class~='#{$name}:child:last-of-type'] > *:last-of-type",
+    // Not child
+    "[class~='#{$name}:not:child:only-child'] > *:not(:only-child)",
+    "[class~='#{$name}:not:child:first-child'] > *:not(:first-child)",
+    "[class~='#{$name}:not:child:last-child'] > *:not(:last-child)",
+    "[class~='#{$name}:not:child:last-of-type'] > *:not(:last-of-type)"
+  );
+}
+
+@function props($className, $property, $value, $suffix: "") {
+  $name: "#{$className}-#{$value}#{$suffix}";
+  @return (
+    className: $className,
+    property: $property,
+    value: $value,
+    selectors: selectors($name)
+  );
+}
+
+@mixin createRules($property, $value, $suffix: "") {
+  $props: props(get($classNameMap, $property), $property, $value, $suffix);
+
+  #{get($props, "selectors")} {
+    #{get($props ,"property")}: #{get($props, "value")};
+  }
+}

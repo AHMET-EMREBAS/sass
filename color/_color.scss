@@ -1,0 +1,35 @@
+@use "vars" as vars;
+@use "../utils" as utils;
+
+@function __variants($value) {
+  @return (
+    1: lighten($value, 30%),
+    2: lighten($value, 20%),
+    3: lighten($value, 10%),
+    4: darken($value, 10%),
+    5: darken($value, 20%),
+    6: darken($value, 30%)
+  );
+}
+
+@mixin create($name, $color) {
+  $primaryVariants: __variants($color);
+
+  #{utils.selectors(#{$name})} {
+    color: #{$color};
+  }
+
+  #{utils.selectors(bg-#{$name})} {
+    background-color: #{$color};
+  }
+
+  @each $k, $v in __variants($color) {
+    #{utils.selectors("#{$name}-#{$k}")} {
+      color: #{$v};
+    }
+
+    #{utils.selectors("bg-#{$name}-#{$k}")} {
+      background-color: #{$v};
+    }
+  }
+}

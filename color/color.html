@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colors</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      /* .some::first-letter{ 
+
+        color: orange ;
+
+      } */
+      button {
+        font-size: 1.4em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="primary:child:last-child success-3:child:hover">
+      <button>First Child</button>
+      <button>Second Child</button>
+      <button>Third Child</button>
+      <button>Last Child</button>
+    </div>
+  </body>
+
+  <script>
+    const sheets = document.styleSheets;
+
+    const elements = document.querySelectorAll("*");
+
+    for (const e of elements) {
+      for (const cls of e.classList) {
+        console.log(cls);
+        const [className, pesudo] = cls.split(":");
+        const [property, value] = className.split("-");
+        sheets[0].addRule(`.${className}`, `${property}:${value}`);
+      }
+    }
+    // for (const sheet of sheets) {
+    //   console.log(sheet);
+    // }
+  </script>
+</html>

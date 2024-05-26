@@ -1,0 +1,10 @@
+@use "color" as color;
+
+@include color.create("primary", royalblue);
+@include color.create("accent", pink);
+@include color.create("warn", crimson);
+@include color.create("error", crimson);
+@include color.create("success", green);
+@include color.create("warning", orange);
+@include color.create("black", black);
+@include color.create("gray", gray);
