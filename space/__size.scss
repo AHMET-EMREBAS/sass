@@ -1,37 +1,67 @@
 @use "../core" as core;
 
-@each $property, $name in (width: w, min-width: w-min, max-width: w-max) {
-  .#{$name}-100 {
-    #{$property}: 100%;
+@mixin createSizes($prefix: "") {
+  @each $property, $name in (width: w, min-width: w-min, max-width: w-max) {
+    $percent: 8%;
+    $view: 8vw;
+    $vFull: 100vw;
+
+    @include core.createRule(#{$name}-100, $property, 100%, $prefix);
+    @include core.createRule(v#{$name}-100, $property, $vFull, $prefix);
+
+    @for $i from 1 through 12 {
+      @include core.createRule(
+        #{$name}-#{$i * 8},
+        $property,
+        $i * $percent,
+        $prefix
+      );
+      @include core.createRule(
+        v#{$name}-#{$i * 8},
+        $property,
+        $i * $view,
+        $prefix
+      );
+    }
+    @for $i from 1 through 24 {
+      @include core.createRule(
+        #{$name}-#{$i * 16}px,
+        $property,
+        $i * 16px,
+        $prefix
+      );
+    }
   }
 
-  .v#{$name}-100 {
-    #{$property}: 100vw;
-  }
-  @for $i from 1 through 12 {
-    .#{$name}-#{$i*8} {
-      #{$property}: #{$i * 8%};
-    }
-    .v#{$name}-#{$i*8} {
-      #{$property}: #{$i * 8vw};
-    }
-  }
-}
+  @each $property, $name in (height: h, min-height: h-min, max-height: h-max) {
+    $percent: 8%;
+    $view: 8vh;
+    $vFull: 100vh;
 
-@each $property, $name in (height: h, max-height: h-max, min-height: h-min) {
-  .#{$name}-100 {
-    #{$property}: 100%;
-  }
-  .v#{$name}-100 {
-    #{$property}: 100vh;
-  }
+    @include core.createRule(#{$name}-100, $property, 100%, $prefix);
+    @include core.createRule(v#{$name}-100, $property, $vFull, $prefix);
 
-  @for $i from 1 through 12 {
-    .#{$name}-#{$i*8} {
-      #{$property}: #{$i * 8%};
+    @for $i from 1 through 12 {
+      @include core.createRule(
+        #{$name}-#{$i * 8},
+        $property,
+        $i * $percent,
+        $prefix
+      );
+      @include core.createRule(
+        v#{$name}-#{$i * 8},
+        $property,
+        $i * $view,
+        $prefix
+      );
     }
-    .v#{$name}-#{$i*8} {
-      #{$property}: #{$i * 8vh};
+    @for $i from 1 through 24 {
+      @include core.createRule(
+        #{$name}-#{$i * 16}px,
+        $property,
+        $i * 16px,
+        $prefix
+      );
     }
   }
 }

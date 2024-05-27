@@ -3,3 +3,9 @@
 @function fl($value) {
   @return str.slice($value, 0, 1);
 }
+
+@mixin createRule($cn, $pn, $value, $prefix: "") {
+  [class~="#{$prefix}#{$cn}"] {
+    #{$pn}: #{$value};
+  }
+}

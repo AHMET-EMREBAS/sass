@@ -1,6 +1,10 @@
-@forward "media";
-@forward "space";
+@use "media" as media;
+@use "space" as space;
 @use "color" as color;
+
+@include space.createSpaces();
+@include space.createSizes();
+@include media.createMedias();
 
 @include color.create(
   (
