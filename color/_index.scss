@@ -1,0 +1,7 @@
+@use "_color" as color;
+
+@mixin create($colors) {
+  @each $name, $value in $colors {
+    @include color.create($name, $value);
+  }
+}

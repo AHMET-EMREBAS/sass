@@ -1,16 +1,5 @@
 @use "sass:map";
 
-// Property to Class Map
-$classNameMap: (
-  color: c,
-  background-color: bg,
-  border-color: b,
-  border-left-color: bl,
-  border-right-color: br,
-  border-top-color: bt,
-  border-bottom-color: bb,
-);
-
 @function get($props, $key) {
   @return map.get($props, $key);
 }
@@ -89,29 +78,3 @@ $classNameMap: (
   );
 }
 
-@function props($className, $property, $value, $suffix: "") {
-  $name: "#{$className}-#{$value}#{$suffix}";
-  @return (
-    className: $className,
-    property: $property,
-    value: $value,
-    selectors: selectors($name)
-  );
-}
-
-// @mixin createRules($property, $value, $suffix: "") {
-//   $props: props(get($classNameMap, $property), $property, $value, $suffix);
-
-//   $selectors: get($props, "selectors");
-
-//   .some {
-//     color: list.nth($selectors, 1);
-//   }
-//   // #{}-x {
-//   //   #{get($props ,"property")}: #{get($props, "value")};
-//   // }
-
-//   #{$selectors} {
-//     #{get($props ,"property")}: #{get($props, "value")};
-//   }
-// }

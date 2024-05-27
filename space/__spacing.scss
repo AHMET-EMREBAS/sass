@@ -1,0 +1,49 @@
+@use "../core" as core;
+
+@for $i from 1 through 12 {
+  .p-#{$i} {
+    padding: #{$i * 0.5}em;
+  }
+
+  .px-#{$i} {
+    padding-left: #{$i * 0.5}em;
+    padding-right: #{$i * 0.5}em;
+  }
+
+  .py-#{$i} {
+    padding-top: #{$i * 0.5}em;
+    padding-bottom: #{$i * 0.5}em;
+  }
+
+  @each $side in (top, right, bottom, left) {
+    .p#{core.fl($side)}-#{$i} {
+      padding-#{$side}: #{$i * 0.5}em;
+    }
+  }
+}
+
+.m-auto {
+  margin: auto;
+}
+
+@for $i from 1 through 12 {
+  .m-#{$i} {
+    margin: #{$i * 0.5}em;
+  }
+
+  .mx-#{$i} {
+    margin-left: #{$i * 0.5}em;
+    margin-right: #{$i * 0.5}em;
+  }
+
+  .my-#{$i} {
+    margin-top: #{$i * 0.5}em;
+    margin-bottom: #{$i * 0.5}em;
+  }
+
+  @each $side in (top, right, bottom, left) {
+    .m#{core.fl($side)}-#{$i} {
+      margin-#{$side}: #{$i * 0.5}em;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@use "../core" as core;
+
+@each $property, $name in (width: w, min-width: w-min, max-width: w-max) {
+  .#{$name}-100 {
+    #{$property}: 100%;
+  }
+
+  .v#{$name}-100 {
+    #{$property}: 100vw;
+  }
+  @for $i from 1 through 12 {
+    .#{$name}-#{$i*8} {
+      #{$property}: #{$i * 8%};
+    }
+    .v#{$name}-#{$i*8} {
+      #{$property}: #{$i * 8vw};
+    }
+  }
+}
+
+@each $property, $name in (height: h, max-height: h-max, min-height: h-min) {
+  .#{$name}-100 {
+    #{$property}: 100%;
+  }
+  .v#{$name}-100 {
+    #{$property}: 100vh;
+  }
+
+  @for $i from 1 through 12 {
+    .#{$name}-#{$i*8} {
+      #{$property}: #{$i * 8%};
+    }
+    .v#{$name}-#{$i*8} {
+      #{$property}: #{$i * 8vh};
+    }
+  }
+}

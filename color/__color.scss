@@ -1,5 +1,4 @@
-@use "vars" as vars;
-@use "../utils" as utils;
+@use "../core" as utils;
 @use "sass:list";
 
 @function __variants($value) {
@@ -21,6 +20,7 @@
   .#{$name} {
     color: #{$color};
   }
+  
   .bg-#{$name} {
     background-color: #{$color};
   }
@@ -34,6 +34,13 @@
   }
 
   @each $k, $v in __variants($color) {
+    .#{$name}-#{$k} {
+      color: #{$color};
+    }
+    .bg-#{$name}-#{$k} {
+      background-color: #{$color};
+    }
+
     #{utils.selectors("#{$name}-#{$k}")} {
       color: #{$v};
     }

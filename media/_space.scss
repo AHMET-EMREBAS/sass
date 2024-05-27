@@ -1,0 +1,43 @@
+@use "../core" as core;
+
+@mixin createWidthMedias($media) {
+  @each $property, $name in (width: w, min-width: w-min, max-width: w-max) {
+    [class~="#{$media}:#{$name}-100"] {
+      #{$property}: 100%;
+    }
+
+    [class~="#{$media}:v#{$name}-100"] {
+      #{$property}: 100vw;
+    }
+
+    @for $i from 1 through 12 {
+      [class~="#{$media}:#{$name}-#{$i*8}"] {
+        #{$property}: #{$i * 8%};
+      }
+      [class~="#{$media}:v#{$name}-#{$i*8}"] {
+        #{$property}: #{$i * 8vw};
+      }
+    }
+  }
+}
+
+@mixin createHeightMedias($media) {
+  @each $property, $name in (height: h, min-height: h-min, max-height: h-max) {
+    [class~="#{$media}:#{$name}-100"] {
+      #{$property}: 100%;
+    }
+
+    [class~="#{$media}:v#{$name}-100"] {
+      #{$property}: 100vh;
+    }
+
+    @for $i from 1 through 12 {
+      [class~="#{$media}:#{$name}-#{$i*8}"] {
+        #{$property}: #{$i * 8%};
+      }
+      [class~="#{$media}:v#{$name}-#{$i*8}"] {
+        #{$property}: #{$i * 8vh};
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@forward "media";
+@forward "space";
+@use "color" as color;
+
+@include color.create(
+  (
+    primary: royalblue,
+    accent: purple,
+    warn: orangered,
+    error: crimson,
+    info: teal,
+    success: green,
+    black: black,
+    gray: gray,
+    white: white,
+  )
+);

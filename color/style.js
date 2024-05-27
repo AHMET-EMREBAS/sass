@@ -1,5 +1,0 @@
-(() => {
-  function findColors() {}
-
-  function findBgColors() {}
-})();

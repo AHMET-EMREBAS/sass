@@ -1,0 +1,9 @@
+@use "space" as space;
+@use "../core" as core;
+
+@each $media, $condition in core.mediaMap() {
+  @media screen and (#{$condition}) {
+    @include space.createWidthMedias($media);
+    @include space.createHeightMedias($media);
+  }
+}
