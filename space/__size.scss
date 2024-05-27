@@ -1,36 +1,36 @@
 @use "../core" as core;
 
+@mixin ___create($name, $property, $percent, $view, $vFull, $prefix: "") {
+  @include core.createRule(#{$name}-100, (#{$property}: 100%), $prefix);
+  @include core.createRule(v#{$name}-100, (#{$property}: $vFull), $prefix);
+
+  @for $i from 1 through 12 {
+    @include core.createRule(
+      #{$name}-#{$i * 8},
+      (#{$property}: $i * $percent) $prefix
+    );
+    @include core.createRule(
+      v#{$name}-#{$i * 8},
+      (#{$property}: $i * $view) $prefix
+    );
+  }
+  
+  @for $i from 1 through 24 {
+    @include core.createRule(
+      #{$name}-#{$i * 16}px,
+      (#{$property}: $i * 16px),
+      $prefix
+    );
+  }
+}
+
 @mixin createSizes($prefix: "") {
   @each $property, $name in (width: w, min-width: w-min, max-width: w-max) {
     $percent: 8%;
     $view: 8vw;
     $vFull: 100vw;
 
-    @include core.createRule(#{$name}-100, $property, 100%, $prefix);
-    @include core.createRule(v#{$name}-100, $property, $vFull, $prefix);
-
-    @for $i from 1 through 12 {
-      @include core.createRule(
-        #{$name}-#{$i * 8},
-        $property,
-        $i * $percent,
-        $prefix
-      );
-      @include core.createRule(
-        v#{$name}-#{$i * 8},
-        $property,
-        $i * $view,
-        $prefix
-      );
-    }
-    @for $i from 1 through 24 {
-      @include core.createRule(
-        #{$name}-#{$i * 16}px,
-        $property,
-        $i * 16px,
-        $prefix
-      );
-    }
+    @include ___create($name, $property, $percent, $view, $vFull, $prefix);
   }
 
   @each $property, $name in (height: h, min-height: h-min, max-height: h-max) {
@@ -38,30 +38,6 @@
     $view: 8vh;
     $vFull: 100vh;
 
-    @include core.createRule(#{$name}-100, $property, 100%, $prefix);
-    @include core.createRule(v#{$name}-100, $property, $vFull, $prefix);
-
-    @for $i from 1 through 12 {
-      @include core.createRule(
-        #{$name}-#{$i * 8},
-        $property,
-        $i * $percent,
-        $prefix
-      );
-      @include core.createRule(
-        v#{$name}-#{$i * 8},
-        $property,
-        $i * $view,
-        $prefix
-      );
-    }
-    @for $i from 1 through 24 {
-      @include core.createRule(
-        #{$name}-#{$i * 16}px,
-        $property,
-        $i * 16px,
-        $prefix
-      );
-    }
+    @include ___create($name, $property, $percent, $view, $vFull, $prefix);
   }
 }
