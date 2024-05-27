@@ -1,5 +1,7 @@
 @use "sass:string" as str;
 
+@use "selectors" as selectors;
+
 @function fl($value) {
   @return str.slice($value, 0, 1);
 }
@@ -12,7 +14,8 @@
       #{$k}: #{$v};
     }
   }
-  [class~="#{$selector}"] {
+
+  #{selectors.selectors($selector)} {
     @each $k, $v in $value {
       #{$k}: #{$v};
     }

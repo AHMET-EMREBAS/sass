@@ -1,4 +1,4 @@
-@use "../core" as utils;
+@use "../core" as core;
 @use "sass:list";
 
 @function __variants($value) {
@@ -13,14 +13,12 @@
 }
 
 @mixin create($name, $color) {
-  $primaryVariants: __variants($color);
-
-  $selectors: utils.selectors(#{$name});
+  $selectors: core.selectors(#{$name});
 
   .#{$name} {
     color: #{$color};
   }
-  
+
   .bg-#{$name} {
     background-color: #{$color};
   }
@@ -29,7 +27,7 @@
     color: #{$color};
   }
 
-  #{utils.selectors(bg-#{$name})} {
+  #{core.selectors(bg-#{$name})} {
     background-color: #{$color};
   }
 
@@ -41,11 +39,11 @@
       background-color: #{$color};
     }
 
-    #{utils.selectors("#{$name}-#{$k}")} {
+    #{core.selectors("#{$name}-#{$k}")} {
       color: #{$v};
     }
 
-    #{utils.selectors("bg-#{$name}-#{$k}")} {
+    #{core.selectors("bg-#{$name}-#{$k}")} {
       background-color: #{$v};
     }
   }

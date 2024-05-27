@@ -15,7 +15,7 @@
     @for $i from 1 through 12 {
       $value: #{$i * 0.5}em;
 
-      @include core.createRule(#{pn}-#{$i}, (#{$pn}: $value), $prefix);
+      @include core.createRule(#{$pns}-#{$i}, (#{$pn}: $value), $prefix);
 
       @include core.createRule(
         #{$pns}x-#{$i},

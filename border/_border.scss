@@ -1,0 +1,15 @@
+$_borderStyles: (dashed, dotted, double, groove, outset, ridge, solid, none);
+
+@mixin createBorders() {
+  @for $i from 1 through 12 {
+    .r-#{$i} {
+      border-radius: #{$i * 0.2em};
+    }
+  }
+
+  @each $i in $_borderStyles {
+    .b-#{$i} {
+      border-style: #{$i};
+    }
+  }
+}

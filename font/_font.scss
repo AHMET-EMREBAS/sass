@@ -1,0 +1,13 @@
+@mixin createFonts() {
+  @for $i from 1 through 9 {
+    .fw-#{$i*100} {
+      font-weight: #{$i * 100};
+    }
+  }
+
+  @for $i from 1 through 9 {
+    .fs-#{$i} {
+      font-size: #{$i * 0.5em};
+    }
+  }
+}
