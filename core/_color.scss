@@ -6,6 +6,8 @@ $__builtin: (
   success: rgb(0, 198, 0),
   info: rgb(0, 210, 210),
   warning: orange,
+  white: white,
+  black: rgb(59, 59, 59),
 );
 
 @mixin root($n, $v) {

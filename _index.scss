@@ -1,14 +1,1 @@
-@use "color" as color;
-
-@mixin createColors($primary, $accent, $warn) {
-  :root {
-    @include color.root(primary, $primary);
-    @include color.root(accent, $accent);
-    @include color.root(warn, $warn);
-    @include color.builtinRoot();
-  }
-  @include color.class(primary);
-  @include color.class(accent);
-  @include color.class(warn);
-  @include color.builtinClass();
-}
+@forward "core";
