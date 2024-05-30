@@ -1,4 +1,5 @@
 @use "action" as action;
+@use "child" as child;
 
 $__colorLimit: 30;
 $__builtin: (
@@ -20,28 +21,57 @@ $__builtin: (
 }
 
 @mixin class($cn) {
+  // Color
+  @include action.create($cn);
+  @include child.create($cn);
   .#{$cn} {
     color: var(--#{$cn});
   }
 
-  @include action.create($cn);
-
+  // Background Color
+  @include action.create(bg-#{$cn});
+  @include child.create(bg-#{$cn});
   .bg-#{$cn} {
     background-color: var(--#{$cn});
   }
-  @include action.create(bg-#{$cn});
+
+  // Border Color
+  @include action.create(br-#{$cn});
+  @include child.create(br-#{$cn});
+  .br-#{$cn} {
+    border-color: var(--#{$cn});
+  }
 
   @for $i from 1 through 6 {
     $ccn: #{$cn}-#{$i};
+
     @include action.create($ccn);
+    @include child.create($ccn);
 
     .#{$ccn} {
       color: var(--#{$ccn});
     }
 
     @include action.create(bg-#{$ccn});
+    @include child.create(bg-#{$ccn});
     .bg-#{$ccn} {
       background-color: var(--#{$ccn});
+    }
+
+    // Border Colors
+    @include action.create(br-#{$ccn});
+    @include child.create(br-#{$ccn});
+    .br-#{$ccn} {
+      border-color: var(--#{$ccn});
+    }
+
+    // Border side colors
+    @each $k, $v in () {
+      @include action.create(br-#{$ccn});
+      @include child.create(br-#{$ccn});
+      .br#{$k}-#{$ccn} {
+        border-#{$v}-color: var(--#{$ccn});
+      }
     }
   }
 }

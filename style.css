@@ -1,0 +1,2862 @@
+:root {
+  --input-radius: 0.5em;
+  --input-border-width: 0.3em;
+  --input-padding-x: 1em;
+  --input-padding-y: 0.5em;
+  --input-border-style: solid;
+  --input-min-width: 12em;
+}
+
+input {
+  border-radius: var(--input-radius, 0.5em);
+  border-width: var(--input-border-width, 0.3em);
+  padding-left: var(--input-padding-x, 2em);
+  padding-right: var(--input-padding-x, 2em);
+  padding-top: var(--input-padding-y, 0.5em);
+  padding-bottom: var(--input-padding-y, 0.5em);
+  border-style: var(--input-border-style, solid);
+  min-width: var(--input-min-width);
+  color: var(--black-6);
+  border-color: var(--primary-6);
+}
+
+input:active,
+input:focus {
+  outline: none !important;
+  border-color: var(--primary-4);
+}
+
+.primary__ {
+  content: "";
+}
+
+.primary, [class~="primary:hover"]:hover,
+[class~="primary:focus"]:focus,
+[class~="primary:active"]:active,
+[class~="primary:selection"]::selection,
+[class~="primary::hover"] > *:hover,
+[class~="primary::focus"] > *:focus,
+[class~="primary::active"] > *:active,
+[class~="primary::selection"] > *::selection, [class~="primary::"] > * {
+  color: var(--primary);
+}
+
+.bg-primary__ {
+  content: "";
+}
+
+.bg-primary, [class~="bg-primary:hover"]:hover,
+[class~="bg-primary:focus"]:focus,
+[class~="bg-primary:active"]:active,
+[class~="bg-primary:selection"]::selection,
+[class~="bg-primary::hover"] > *:hover,
+[class~="bg-primary::focus"] > *:focus,
+[class~="bg-primary::active"] > *:active,
+[class~="bg-primary::selection"] > *::selection, [class~="bg-primary::"] > * {
+  background-color: var(--primary);
+}
+
+.br-primary__ {
+  content: "";
+}
+
+.br-primary, [class~="br-primary:hover"]:hover,
+[class~="br-primary:focus"]:focus,
+[class~="br-primary:active"]:active,
+[class~="br-primary:selection"]::selection,
+[class~="br-primary::hover"] > *:hover,
+[class~="br-primary::focus"] > *:focus,
+[class~="br-primary::active"] > *:active,
+[class~="br-primary::selection"] > *::selection, [class~="br-primary::"] > * {
+  border-color: var(--primary);
+}
+
+.primary-1__ {
+  content: "";
+}
+
+.primary-1, [class~="primary-1:hover"]:hover,
+[class~="primary-1:focus"]:focus,
+[class~="primary-1:active"]:active,
+[class~="primary-1:selection"]::selection,
+[class~="primary-1::hover"] > *:hover,
+[class~="primary-1::focus"] > *:focus,
+[class~="primary-1::active"] > *:active,
+[class~="primary-1::selection"] > *::selection, [class~="primary-1::"] > * {
+  color: var(--primary-1);
+}
+
+.bg-primary-1__ {
+  content: "";
+}
+
+.bg-primary-1, [class~="bg-primary-1:hover"]:hover,
+[class~="bg-primary-1:focus"]:focus,
+[class~="bg-primary-1:active"]:active,
+[class~="bg-primary-1:selection"]::selection,
+[class~="bg-primary-1::hover"] > *:hover,
+[class~="bg-primary-1::focus"] > *:focus,
+[class~="bg-primary-1::active"] > *:active,
+[class~="bg-primary-1::selection"] > *::selection, [class~="bg-primary-1::"] > * {
+  background-color: var(--primary-1);
+}
+
+.br-primary-1__ {
+  content: "";
+}
+
+.br-primary-1, [class~="br-primary-1:hover"]:hover,
+[class~="br-primary-1:focus"]:focus,
+[class~="br-primary-1:active"]:active,
+[class~="br-primary-1:selection"]::selection,
+[class~="br-primary-1::hover"] > *:hover,
+[class~="br-primary-1::focus"] > *:focus,
+[class~="br-primary-1::active"] > *:active,
+[class~="br-primary-1::selection"] > *::selection, [class~="br-primary-1::"] > * {
+  border-color: var(--primary-1);
+}
+
+.primary-2__ {
+  content: "";
+}
+
+.primary-2, [class~="primary-2:hover"]:hover,
+[class~="primary-2:focus"]:focus,
+[class~="primary-2:active"]:active,
+[class~="primary-2:selection"]::selection,
+[class~="primary-2::hover"] > *:hover,
+[class~="primary-2::focus"] > *:focus,
+[class~="primary-2::active"] > *:active,
+[class~="primary-2::selection"] > *::selection, [class~="primary-2::"] > * {
+  color: var(--primary-2);
+}
+
+.bg-primary-2__ {
+  content: "";
+}
+
+.bg-primary-2, [class~="bg-primary-2:hover"]:hover,
+[class~="bg-primary-2:focus"]:focus,
+[class~="bg-primary-2:active"]:active,
+[class~="bg-primary-2:selection"]::selection,
+[class~="bg-primary-2::hover"] > *:hover,
+[class~="bg-primary-2::focus"] > *:focus,
+[class~="bg-primary-2::active"] > *:active,
+[class~="bg-primary-2::selection"] > *::selection, [class~="bg-primary-2::"] > * {
+  background-color: var(--primary-2);
+}
+
+.br-primary-2__ {
+  content: "";
+}
+
+.br-primary-2, [class~="br-primary-2:hover"]:hover,
+[class~="br-primary-2:focus"]:focus,
+[class~="br-primary-2:active"]:active,
+[class~="br-primary-2:selection"]::selection,
+[class~="br-primary-2::hover"] > *:hover,
+[class~="br-primary-2::focus"] > *:focus,
+[class~="br-primary-2::active"] > *:active,
+[class~="br-primary-2::selection"] > *::selection, [class~="br-primary-2::"] > * {
+  border-color: var(--primary-2);
+}
+
+.primary-3__ {
+  content: "";
+}
+
+.primary-3, [class~="primary-3:hover"]:hover,
+[class~="primary-3:focus"]:focus,
+[class~="primary-3:active"]:active,
+[class~="primary-3:selection"]::selection,
+[class~="primary-3::hover"] > *:hover,
+[class~="primary-3::focus"] > *:focus,
+[class~="primary-3::active"] > *:active,
+[class~="primary-3::selection"] > *::selection, [class~="primary-3::"] > * {
+  color: var(--primary-3);
+}
+
+.bg-primary-3__ {
+  content: "";
+}
+
+.bg-primary-3, [class~="bg-primary-3:hover"]:hover,
+[class~="bg-primary-3:focus"]:focus,
+[class~="bg-primary-3:active"]:active,
+[class~="bg-primary-3:selection"]::selection,
+[class~="bg-primary-3::hover"] > *:hover,
+[class~="bg-primary-3::focus"] > *:focus,
+[class~="bg-primary-3::active"] > *:active,
+[class~="bg-primary-3::selection"] > *::selection, [class~="bg-primary-3::"] > * {
+  background-color: var(--primary-3);
+}
+
+.br-primary-3__ {
+  content: "";
+}
+
+.br-primary-3, [class~="br-primary-3:hover"]:hover,
+[class~="br-primary-3:focus"]:focus,
+[class~="br-primary-3:active"]:active,
+[class~="br-primary-3:selection"]::selection,
+[class~="br-primary-3::hover"] > *:hover,
+[class~="br-primary-3::focus"] > *:focus,
+[class~="br-primary-3::active"] > *:active,
+[class~="br-primary-3::selection"] > *::selection, [class~="br-primary-3::"] > * {
+  border-color: var(--primary-3);
+}
+
+.primary-4__ {
+  content: "";
+}
+
+.primary-4, [class~="primary-4:hover"]:hover,
+[class~="primary-4:focus"]:focus,
+[class~="primary-4:active"]:active,
+[class~="primary-4:selection"]::selection,
+[class~="primary-4::hover"] > *:hover,
+[class~="primary-4::focus"] > *:focus,
+[class~="primary-4::active"] > *:active,
+[class~="primary-4::selection"] > *::selection, [class~="primary-4::"] > * {
+  color: var(--primary-4);
+}
+
+.bg-primary-4__ {
+  content: "";
+}
+
+.bg-primary-4, [class~="bg-primary-4:hover"]:hover,
+[class~="bg-primary-4:focus"]:focus,
+[class~="bg-primary-4:active"]:active,
+[class~="bg-primary-4:selection"]::selection,
+[class~="bg-primary-4::hover"] > *:hover,
+[class~="bg-primary-4::focus"] > *:focus,
+[class~="bg-primary-4::active"] > *:active,
+[class~="bg-primary-4::selection"] > *::selection, [class~="bg-primary-4::"] > * {
+  background-color: var(--primary-4);
+}
+
+.br-primary-4__ {
+  content: "";
+}
+
+.br-primary-4, [class~="br-primary-4:hover"]:hover,
+[class~="br-primary-4:focus"]:focus,
+[class~="br-primary-4:active"]:active,
+[class~="br-primary-4:selection"]::selection,
+[class~="br-primary-4::hover"] > *:hover,
+[class~="br-primary-4::focus"] > *:focus,
+[class~="br-primary-4::active"] > *:active,
+[class~="br-primary-4::selection"] > *::selection, [class~="br-primary-4::"] > * {
+  border-color: var(--primary-4);
+}
+
+.primary-5__ {
+  content: "";
+}
+
+.primary-5, [class~="primary-5:hover"]:hover,
+[class~="primary-5:focus"]:focus,
+[class~="primary-5:active"]:active,
+[class~="primary-5:selection"]::selection,
+[class~="primary-5::hover"] > *:hover,
+[class~="primary-5::focus"] > *:focus,
+[class~="primary-5::active"] > *:active,
+[class~="primary-5::selection"] > *::selection, [class~="primary-5::"] > * {
+  color: var(--primary-5);
+}
+
+.bg-primary-5__ {
+  content: "";
+}
+
+.bg-primary-5, [class~="bg-primary-5:hover"]:hover,
+[class~="bg-primary-5:focus"]:focus,
+[class~="bg-primary-5:active"]:active,
+[class~="bg-primary-5:selection"]::selection,
+[class~="bg-primary-5::hover"] > *:hover,
+[class~="bg-primary-5::focus"] > *:focus,
+[class~="bg-primary-5::active"] > *:active,
+[class~="bg-primary-5::selection"] > *::selection, [class~="bg-primary-5::"] > * {
+  background-color: var(--primary-5);
+}
+
+.br-primary-5__ {
+  content: "";
+}
+
+.br-primary-5, [class~="br-primary-5:hover"]:hover,
+[class~="br-primary-5:focus"]:focus,
+[class~="br-primary-5:active"]:active,
+[class~="br-primary-5:selection"]::selection,
+[class~="br-primary-5::hover"] > *:hover,
+[class~="br-primary-5::focus"] > *:focus,
+[class~="br-primary-5::active"] > *:active,
+[class~="br-primary-5::selection"] > *::selection, [class~="br-primary-5::"] > * {
+  border-color: var(--primary-5);
+}
+
+.primary-6__ {
+  content: "";
+}
+
+.primary-6, [class~="primary-6:hover"]:hover,
+[class~="primary-6:focus"]:focus,
+[class~="primary-6:active"]:active,
+[class~="primary-6:selection"]::selection,
+[class~="primary-6::hover"] > *:hover,
+[class~="primary-6::focus"] > *:focus,
+[class~="primary-6::active"] > *:active,
+[class~="primary-6::selection"] > *::selection, [class~="primary-6::"] > * {
+  color: var(--primary-6);
+}
+
+.bg-primary-6__ {
+  content: "";
+}
+
+.bg-primary-6, [class~="bg-primary-6:hover"]:hover,
+[class~="bg-primary-6:focus"]:focus,
+[class~="bg-primary-6:active"]:active,
+[class~="bg-primary-6:selection"]::selection,
+[class~="bg-primary-6::hover"] > *:hover,
+[class~="bg-primary-6::focus"] > *:focus,
+[class~="bg-primary-6::active"] > *:active,
+[class~="bg-primary-6::selection"] > *::selection, [class~="bg-primary-6::"] > * {
+  background-color: var(--primary-6);
+}
+
+.br-primary-6__ {
+  content: "";
+}
+
+.br-primary-6, [class~="br-primary-6:hover"]:hover,
+[class~="br-primary-6:focus"]:focus,
+[class~="br-primary-6:active"]:active,
+[class~="br-primary-6:selection"]::selection,
+[class~="br-primary-6::hover"] > *:hover,
+[class~="br-primary-6::focus"] > *:focus,
+[class~="br-primary-6::active"] > *:active,
+[class~="br-primary-6::selection"] > *::selection, [class~="br-primary-6::"] > * {
+  border-color: var(--primary-6);
+}
+
+.accent__ {
+  content: "";
+}
+
+.accent, [class~="accent:hover"]:hover,
+[class~="accent:focus"]:focus,
+[class~="accent:active"]:active,
+[class~="accent:selection"]::selection,
+[class~="accent::hover"] > *:hover,
+[class~="accent::focus"] > *:focus,
+[class~="accent::active"] > *:active,
+[class~="accent::selection"] > *::selection, [class~="accent::"] > * {
+  color: var(--accent);
+}
+
+.bg-accent__ {
+  content: "";
+}
+
+.bg-accent, [class~="bg-accent:hover"]:hover,
+[class~="bg-accent:focus"]:focus,
+[class~="bg-accent:active"]:active,
+[class~="bg-accent:selection"]::selection,
+[class~="bg-accent::hover"] > *:hover,
+[class~="bg-accent::focus"] > *:focus,
+[class~="bg-accent::active"] > *:active,
+[class~="bg-accent::selection"] > *::selection, [class~="bg-accent::"] > * {
+  background-color: var(--accent);
+}
+
+.br-accent__ {
+  content: "";
+}
+
+.br-accent, [class~="br-accent:hover"]:hover,
+[class~="br-accent:focus"]:focus,
+[class~="br-accent:active"]:active,
+[class~="br-accent:selection"]::selection,
+[class~="br-accent::hover"] > *:hover,
+[class~="br-accent::focus"] > *:focus,
+[class~="br-accent::active"] > *:active,
+[class~="br-accent::selection"] > *::selection, [class~="br-accent::"] > * {
+  border-color: var(--accent);
+}
+
+.accent-1__ {
+  content: "";
+}
+
+.accent-1, [class~="accent-1:hover"]:hover,
+[class~="accent-1:focus"]:focus,
+[class~="accent-1:active"]:active,
+[class~="accent-1:selection"]::selection,
+[class~="accent-1::hover"] > *:hover,
+[class~="accent-1::focus"] > *:focus,
+[class~="accent-1::active"] > *:active,
+[class~="accent-1::selection"] > *::selection, [class~="accent-1::"] > * {
+  color: var(--accent-1);
+}
+
+.bg-accent-1__ {
+  content: "";
+}
+
+.bg-accent-1, [class~="bg-accent-1:hover"]:hover,
+[class~="bg-accent-1:focus"]:focus,
+[class~="bg-accent-1:active"]:active,
+[class~="bg-accent-1:selection"]::selection,
+[class~="bg-accent-1::hover"] > *:hover,
+[class~="bg-accent-1::focus"] > *:focus,
+[class~="bg-accent-1::active"] > *:active,
+[class~="bg-accent-1::selection"] > *::selection, [class~="bg-accent-1::"] > * {
+  background-color: var(--accent-1);
+}
+
+.br-accent-1__ {
+  content: "";
+}
+
+.br-accent-1, [class~="br-accent-1:hover"]:hover,
+[class~="br-accent-1:focus"]:focus,
+[class~="br-accent-1:active"]:active,
+[class~="br-accent-1:selection"]::selection,
+[class~="br-accent-1::hover"] > *:hover,
+[class~="br-accent-1::focus"] > *:focus,
+[class~="br-accent-1::active"] > *:active,
+[class~="br-accent-1::selection"] > *::selection, [class~="br-accent-1::"] > * {
+  border-color: var(--accent-1);
+}
+
+.accent-2__ {
+  content: "";
+}
+
+.accent-2, [class~="accent-2:hover"]:hover,
+[class~="accent-2:focus"]:focus,
+[class~="accent-2:active"]:active,
+[class~="accent-2:selection"]::selection,
+[class~="accent-2::hover"] > *:hover,
+[class~="accent-2::focus"] > *:focus,
+[class~="accent-2::active"] > *:active,
+[class~="accent-2::selection"] > *::selection, [class~="accent-2::"] > * {
+  color: var(--accent-2);
+}
+
+.bg-accent-2__ {
+  content: "";
+}
+
+.bg-accent-2, [class~="bg-accent-2:hover"]:hover,
+[class~="bg-accent-2:focus"]:focus,
+[class~="bg-accent-2:active"]:active,
+[class~="bg-accent-2:selection"]::selection,
+[class~="bg-accent-2::hover"] > *:hover,
+[class~="bg-accent-2::focus"] > *:focus,
+[class~="bg-accent-2::active"] > *:active,
+[class~="bg-accent-2::selection"] > *::selection, [class~="bg-accent-2::"] > * {
+  background-color: var(--accent-2);
+}
+
+.br-accent-2__ {
+  content: "";
+}
+
+.br-accent-2, [class~="br-accent-2:hover"]:hover,
+[class~="br-accent-2:focus"]:focus,
+[class~="br-accent-2:active"]:active,
+[class~="br-accent-2:selection"]::selection,
+[class~="br-accent-2::hover"] > *:hover,
+[class~="br-accent-2::focus"] > *:focus,
+[class~="br-accent-2::active"] > *:active,
+[class~="br-accent-2::selection"] > *::selection, [class~="br-accent-2::"] > * {
+  border-color: var(--accent-2);
+}
+
+.accent-3__ {
+  content: "";
+}
+
+.accent-3, [class~="accent-3:hover"]:hover,
+[class~="accent-3:focus"]:focus,
+[class~="accent-3:active"]:active,
+[class~="accent-3:selection"]::selection,
+[class~="accent-3::hover"] > *:hover,
+[class~="accent-3::focus"] > *:focus,
+[class~="accent-3::active"] > *:active,
+[class~="accent-3::selection"] > *::selection, [class~="accent-3::"] > * {
+  color: var(--accent-3);
+}
+
+.bg-accent-3__ {
+  content: "";
+}
+
+.bg-accent-3, [class~="bg-accent-3:hover"]:hover,
+[class~="bg-accent-3:focus"]:focus,
+[class~="bg-accent-3:active"]:active,
+[class~="bg-accent-3:selection"]::selection,
+[class~="bg-accent-3::hover"] > *:hover,
+[class~="bg-accent-3::focus"] > *:focus,
+[class~="bg-accent-3::active"] > *:active,
+[class~="bg-accent-3::selection"] > *::selection, [class~="bg-accent-3::"] > * {
+  background-color: var(--accent-3);
+}
+
+.br-accent-3__ {
+  content: "";
+}
+
+.br-accent-3, [class~="br-accent-3:hover"]:hover,
+[class~="br-accent-3:focus"]:focus,
+[class~="br-accent-3:active"]:active,
+[class~="br-accent-3:selection"]::selection,
+[class~="br-accent-3::hover"] > *:hover,
+[class~="br-accent-3::focus"] > *:focus,
+[class~="br-accent-3::active"] > *:active,
+[class~="br-accent-3::selection"] > *::selection, [class~="br-accent-3::"] > * {
+  border-color: var(--accent-3);
+}
+
+.accent-4__ {
+  content: "";
+}
+
+.accent-4, [class~="accent-4:hover"]:hover,
+[class~="accent-4:focus"]:focus,
+[class~="accent-4:active"]:active,
+[class~="accent-4:selection"]::selection,
+[class~="accent-4::hover"] > *:hover,
+[class~="accent-4::focus"] > *:focus,
+[class~="accent-4::active"] > *:active,
+[class~="accent-4::selection"] > *::selection, [class~="accent-4::"] > * {
+  color: var(--accent-4);
+}
+
+.bg-accent-4__ {
+  content: "";
+}
+
+.bg-accent-4, [class~="bg-accent-4:hover"]:hover,
+[class~="bg-accent-4:focus"]:focus,
+[class~="bg-accent-4:active"]:active,
+[class~="bg-accent-4:selection"]::selection,
+[class~="bg-accent-4::hover"] > *:hover,
+[class~="bg-accent-4::focus"] > *:focus,
+[class~="bg-accent-4::active"] > *:active,
+[class~="bg-accent-4::selection"] > *::selection, [class~="bg-accent-4::"] > * {
+  background-color: var(--accent-4);
+}
+
+.br-accent-4__ {
+  content: "";
+}
+
+.br-accent-4, [class~="br-accent-4:hover"]:hover,
+[class~="br-accent-4:focus"]:focus,
+[class~="br-accent-4:active"]:active,
+[class~="br-accent-4:selection"]::selection,
+[class~="br-accent-4::hover"] > *:hover,
+[class~="br-accent-4::focus"] > *:focus,
+[class~="br-accent-4::active"] > *:active,
+[class~="br-accent-4::selection"] > *::selection, [class~="br-accent-4::"] > * {
+  border-color: var(--accent-4);
+}
+
+.accent-5__ {
+  content: "";
+}
+
+.accent-5, [class~="accent-5:hover"]:hover,
+[class~="accent-5:focus"]:focus,
+[class~="accent-5:active"]:active,
+[class~="accent-5:selection"]::selection,
+[class~="accent-5::hover"] > *:hover,
+[class~="accent-5::focus"] > *:focus,
+[class~="accent-5::active"] > *:active,
+[class~="accent-5::selection"] > *::selection, [class~="accent-5::"] > * {
+  color: var(--accent-5);
+}
+
+.bg-accent-5__ {
+  content: "";
+}
+
+.bg-accent-5, [class~="bg-accent-5:hover"]:hover,
+[class~="bg-accent-5:focus"]:focus,
+[class~="bg-accent-5:active"]:active,
+[class~="bg-accent-5:selection"]::selection,
+[class~="bg-accent-5::hover"] > *:hover,
+[class~="bg-accent-5::focus"] > *:focus,
+[class~="bg-accent-5::active"] > *:active,
+[class~="bg-accent-5::selection"] > *::selection, [class~="bg-accent-5::"] > * {
+  background-color: var(--accent-5);
+}
+
+.br-accent-5__ {
+  content: "";
+}
+
+.br-accent-5, [class~="br-accent-5:hover"]:hover,
+[class~="br-accent-5:focus"]:focus,
+[class~="br-accent-5:active"]:active,
+[class~="br-accent-5:selection"]::selection,
+[class~="br-accent-5::hover"] > *:hover,
+[class~="br-accent-5::focus"] > *:focus,
+[class~="br-accent-5::active"] > *:active,
+[class~="br-accent-5::selection"] > *::selection, [class~="br-accent-5::"] > * {
+  border-color: var(--accent-5);
+}
+
+.accent-6__ {
+  content: "";
+}
+
+.accent-6, [class~="accent-6:hover"]:hover,
+[class~="accent-6:focus"]:focus,
+[class~="accent-6:active"]:active,
+[class~="accent-6:selection"]::selection,
+[class~="accent-6::hover"] > *:hover,
+[class~="accent-6::focus"] > *:focus,
+[class~="accent-6::active"] > *:active,
+[class~="accent-6::selection"] > *::selection, [class~="accent-6::"] > * {
+  color: var(--accent-6);
+}
+
+.bg-accent-6__ {
+  content: "";
+}
+
+.bg-accent-6, [class~="bg-accent-6:hover"]:hover,
+[class~="bg-accent-6:focus"]:focus,
+[class~="bg-accent-6:active"]:active,
+[class~="bg-accent-6:selection"]::selection,
+[class~="bg-accent-6::hover"] > *:hover,
+[class~="bg-accent-6::focus"] > *:focus,
+[class~="bg-accent-6::active"] > *:active,
+[class~="bg-accent-6::selection"] > *::selection, [class~="bg-accent-6::"] > * {
+  background-color: var(--accent-6);
+}
+
+.br-accent-6__ {
+  content: "";
+}
+
+.br-accent-6, [class~="br-accent-6:hover"]:hover,
+[class~="br-accent-6:focus"]:focus,
+[class~="br-accent-6:active"]:active,
+[class~="br-accent-6:selection"]::selection,
+[class~="br-accent-6::hover"] > *:hover,
+[class~="br-accent-6::focus"] > *:focus,
+[class~="br-accent-6::active"] > *:active,
+[class~="br-accent-6::selection"] > *::selection, [class~="br-accent-6::"] > * {
+  border-color: var(--accent-6);
+}
+
+.warn__ {
+  content: "";
+}
+
+.warn, [class~="warn:hover"]:hover,
+[class~="warn:focus"]:focus,
+[class~="warn:active"]:active,
+[class~="warn:selection"]::selection,
+[class~="warn::hover"] > *:hover,
+[class~="warn::focus"] > *:focus,
+[class~="warn::active"] > *:active,
+[class~="warn::selection"] > *::selection, [class~="warn::"] > * {
+  color: var(--warn);
+}
+
+.bg-warn__ {
+  content: "";
+}
+
+.bg-warn, [class~="bg-warn:hover"]:hover,
+[class~="bg-warn:focus"]:focus,
+[class~="bg-warn:active"]:active,
+[class~="bg-warn:selection"]::selection,
+[class~="bg-warn::hover"] > *:hover,
+[class~="bg-warn::focus"] > *:focus,
+[class~="bg-warn::active"] > *:active,
+[class~="bg-warn::selection"] > *::selection, [class~="bg-warn::"] > * {
+  background-color: var(--warn);
+}
+
+.br-warn__ {
+  content: "";
+}
+
+.br-warn, [class~="br-warn:hover"]:hover,
+[class~="br-warn:focus"]:focus,
+[class~="br-warn:active"]:active,
+[class~="br-warn:selection"]::selection,
+[class~="br-warn::hover"] > *:hover,
+[class~="br-warn::focus"] > *:focus,
+[class~="br-warn::active"] > *:active,
+[class~="br-warn::selection"] > *::selection, [class~="br-warn::"] > * {
+  border-color: var(--warn);
+}
+
+.warn-1__ {
+  content: "";
+}
+
+.warn-1, [class~="warn-1:hover"]:hover,
+[class~="warn-1:focus"]:focus,
+[class~="warn-1:active"]:active,
+[class~="warn-1:selection"]::selection,
+[class~="warn-1::hover"] > *:hover,
+[class~="warn-1::focus"] > *:focus,
+[class~="warn-1::active"] > *:active,
+[class~="warn-1::selection"] > *::selection, [class~="warn-1::"] > * {
+  color: var(--warn-1);
+}
+
+.bg-warn-1__ {
+  content: "";
+}
+
+.bg-warn-1, [class~="bg-warn-1:hover"]:hover,
+[class~="bg-warn-1:focus"]:focus,
+[class~="bg-warn-1:active"]:active,
+[class~="bg-warn-1:selection"]::selection,
+[class~="bg-warn-1::hover"] > *:hover,
+[class~="bg-warn-1::focus"] > *:focus,
+[class~="bg-warn-1::active"] > *:active,
+[class~="bg-warn-1::selection"] > *::selection, [class~="bg-warn-1::"] > * {
+  background-color: var(--warn-1);
+}
+
+.br-warn-1__ {
+  content: "";
+}
+
+.br-warn-1, [class~="br-warn-1:hover"]:hover,
+[class~="br-warn-1:focus"]:focus,
+[class~="br-warn-1:active"]:active,
+[class~="br-warn-1:selection"]::selection,
+[class~="br-warn-1::hover"] > *:hover,
+[class~="br-warn-1::focus"] > *:focus,
+[class~="br-warn-1::active"] > *:active,
+[class~="br-warn-1::selection"] > *::selection, [class~="br-warn-1::"] > * {
+  border-color: var(--warn-1);
+}
+
+.warn-2__ {
+  content: "";
+}
+
+.warn-2, [class~="warn-2:hover"]:hover,
+[class~="warn-2:focus"]:focus,
+[class~="warn-2:active"]:active,
+[class~="warn-2:selection"]::selection,
+[class~="warn-2::hover"] > *:hover,
+[class~="warn-2::focus"] > *:focus,
+[class~="warn-2::active"] > *:active,
+[class~="warn-2::selection"] > *::selection, [class~="warn-2::"] > * {
+  color: var(--warn-2);
+}
+
+.bg-warn-2__ {
+  content: "";
+}
+
+.bg-warn-2, [class~="bg-warn-2:hover"]:hover,
+[class~="bg-warn-2:focus"]:focus,
+[class~="bg-warn-2:active"]:active,
+[class~="bg-warn-2:selection"]::selection,
+[class~="bg-warn-2::hover"] > *:hover,
+[class~="bg-warn-2::focus"] > *:focus,
+[class~="bg-warn-2::active"] > *:active,
+[class~="bg-warn-2::selection"] > *::selection, [class~="bg-warn-2::"] > * {
+  background-color: var(--warn-2);
+}
+
+.br-warn-2__ {
+  content: "";
+}
+
+.br-warn-2, [class~="br-warn-2:hover"]:hover,
+[class~="br-warn-2:focus"]:focus,
+[class~="br-warn-2:active"]:active,
+[class~="br-warn-2:selection"]::selection,
+[class~="br-warn-2::hover"] > *:hover,
+[class~="br-warn-2::focus"] > *:focus,
+[class~="br-warn-2::active"] > *:active,
+[class~="br-warn-2::selection"] > *::selection, [class~="br-warn-2::"] > * {
+  border-color: var(--warn-2);
+}
+
+.warn-3__ {
+  content: "";
+}
+
+.warn-3, [class~="warn-3:hover"]:hover,
+[class~="warn-3:focus"]:focus,
+[class~="warn-3:active"]:active,
+[class~="warn-3:selection"]::selection,
+[class~="warn-3::hover"] > *:hover,
+[class~="warn-3::focus"] > *:focus,
+[class~="warn-3::active"] > *:active,
+[class~="warn-3::selection"] > *::selection, [class~="warn-3::"] > * {
+  color: var(--warn-3);
+}
+
+.bg-warn-3__ {
+  content: "";
+}
+
+.bg-warn-3, [class~="bg-warn-3:hover"]:hover,
+[class~="bg-warn-3:focus"]:focus,
+[class~="bg-warn-3:active"]:active,
+[class~="bg-warn-3:selection"]::selection,
+[class~="bg-warn-3::hover"] > *:hover,
+[class~="bg-warn-3::focus"] > *:focus,
+[class~="bg-warn-3::active"] > *:active,
+[class~="bg-warn-3::selection"] > *::selection, [class~="bg-warn-3::"] > * {
+  background-color: var(--warn-3);
+}
+
+.br-warn-3__ {
+  content: "";
+}
+
+.br-warn-3, [class~="br-warn-3:hover"]:hover,
+[class~="br-warn-3:focus"]:focus,
+[class~="br-warn-3:active"]:active,
+[class~="br-warn-3:selection"]::selection,
+[class~="br-warn-3::hover"] > *:hover,
+[class~="br-warn-3::focus"] > *:focus,
+[class~="br-warn-3::active"] > *:active,
+[class~="br-warn-3::selection"] > *::selection, [class~="br-warn-3::"] > * {
+  border-color: var(--warn-3);
+}
+
+.warn-4__ {
+  content: "";
+}
+
+.warn-4, [class~="warn-4:hover"]:hover,
+[class~="warn-4:focus"]:focus,
+[class~="warn-4:active"]:active,
+[class~="warn-4:selection"]::selection,
+[class~="warn-4::hover"] > *:hover,
+[class~="warn-4::focus"] > *:focus,
+[class~="warn-4::active"] > *:active,
+[class~="warn-4::selection"] > *::selection, [class~="warn-4::"] > * {
+  color: var(--warn-4);
+}
+
+.bg-warn-4__ {
+  content: "";
+}
+
+.bg-warn-4, [class~="bg-warn-4:hover"]:hover,
+[class~="bg-warn-4:focus"]:focus,
+[class~="bg-warn-4:active"]:active,
+[class~="bg-warn-4:selection"]::selection,
+[class~="bg-warn-4::hover"] > *:hover,
+[class~="bg-warn-4::focus"] > *:focus,
+[class~="bg-warn-4::active"] > *:active,
+[class~="bg-warn-4::selection"] > *::selection, [class~="bg-warn-4::"] > * {
+  background-color: var(--warn-4);
+}
+
+.br-warn-4__ {
+  content: "";
+}
+
+.br-warn-4, [class~="br-warn-4:hover"]:hover,
+[class~="br-warn-4:focus"]:focus,
+[class~="br-warn-4:active"]:active,
+[class~="br-warn-4:selection"]::selection,
+[class~="br-warn-4::hover"] > *:hover,
+[class~="br-warn-4::focus"] > *:focus,
+[class~="br-warn-4::active"] > *:active,
+[class~="br-warn-4::selection"] > *::selection, [class~="br-warn-4::"] > * {
+  border-color: var(--warn-4);
+}
+
+.warn-5__ {
+  content: "";
+}
+
+.warn-5, [class~="warn-5:hover"]:hover,
+[class~="warn-5:focus"]:focus,
+[class~="warn-5:active"]:active,
+[class~="warn-5:selection"]::selection,
+[class~="warn-5::hover"] > *:hover,
+[class~="warn-5::focus"] > *:focus,
+[class~="warn-5::active"] > *:active,
+[class~="warn-5::selection"] > *::selection, [class~="warn-5::"] > * {
+  color: var(--warn-5);
+}
+
+.bg-warn-5__ {
+  content: "";
+}
+
+.bg-warn-5, [class~="bg-warn-5:hover"]:hover,
+[class~="bg-warn-5:focus"]:focus,
+[class~="bg-warn-5:active"]:active,
+[class~="bg-warn-5:selection"]::selection,
+[class~="bg-warn-5::hover"] > *:hover,
+[class~="bg-warn-5::focus"] > *:focus,
+[class~="bg-warn-5::active"] > *:active,
+[class~="bg-warn-5::selection"] > *::selection, [class~="bg-warn-5::"] > * {
+  background-color: var(--warn-5);
+}
+
+.br-warn-5__ {
+  content: "";
+}
+
+.br-warn-5, [class~="br-warn-5:hover"]:hover,
+[class~="br-warn-5:focus"]:focus,
+[class~="br-warn-5:active"]:active,
+[class~="br-warn-5:selection"]::selection,
+[class~="br-warn-5::hover"] > *:hover,
+[class~="br-warn-5::focus"] > *:focus,
+[class~="br-warn-5::active"] > *:active,
+[class~="br-warn-5::selection"] > *::selection, [class~="br-warn-5::"] > * {
+  border-color: var(--warn-5);
+}
+
+.warn-6__ {
+  content: "";
+}
+
+.warn-6, [class~="warn-6:hover"]:hover,
+[class~="warn-6:focus"]:focus,
+[class~="warn-6:active"]:active,
+[class~="warn-6:selection"]::selection,
+[class~="warn-6::hover"] > *:hover,
+[class~="warn-6::focus"] > *:focus,
+[class~="warn-6::active"] > *:active,
+[class~="warn-6::selection"] > *::selection, [class~="warn-6::"] > * {
+  color: var(--warn-6);
+}
+
+.bg-warn-6__ {
+  content: "";
+}
+
+.bg-warn-6, [class~="bg-warn-6:hover"]:hover,
+[class~="bg-warn-6:focus"]:focus,
+[class~="bg-warn-6:active"]:active,
+[class~="bg-warn-6:selection"]::selection,
+[class~="bg-warn-6::hover"] > *:hover,
+[class~="bg-warn-6::focus"] > *:focus,
+[class~="bg-warn-6::active"] > *:active,
+[class~="bg-warn-6::selection"] > *::selection, [class~="bg-warn-6::"] > * {
+  background-color: var(--warn-6);
+}
+
+.br-warn-6__ {
+  content: "";
+}
+
+.br-warn-6, [class~="br-warn-6:hover"]:hover,
+[class~="br-warn-6:focus"]:focus,
+[class~="br-warn-6:active"]:active,
+[class~="br-warn-6:selection"]::selection,
+[class~="br-warn-6::hover"] > *:hover,
+[class~="br-warn-6::focus"] > *:focus,
+[class~="br-warn-6::active"] > *:active,
+[class~="br-warn-6::selection"] > *::selection, [class~="br-warn-6::"] > * {
+  border-color: var(--warn-6);
+}
+
+.error__ {
+  content: "";
+}
+
+.error, [class~="error:hover"]:hover,
+[class~="error:focus"]:focus,
+[class~="error:active"]:active,
+[class~="error:selection"]::selection,
+[class~="error::hover"] > *:hover,
+[class~="error::focus"] > *:focus,
+[class~="error::active"] > *:active,
+[class~="error::selection"] > *::selection, [class~="error::"] > * {
+  color: var(--error);
+}
+
+.bg-error__ {
+  content: "";
+}
+
+.bg-error, [class~="bg-error:hover"]:hover,
+[class~="bg-error:focus"]:focus,
+[class~="bg-error:active"]:active,
+[class~="bg-error:selection"]::selection,
+[class~="bg-error::hover"] > *:hover,
+[class~="bg-error::focus"] > *:focus,
+[class~="bg-error::active"] > *:active,
+[class~="bg-error::selection"] > *::selection, [class~="bg-error::"] > * {
+  background-color: var(--error);
+}
+
+.br-error__ {
+  content: "";
+}
+
+.br-error, [class~="br-error:hover"]:hover,
+[class~="br-error:focus"]:focus,
+[class~="br-error:active"]:active,
+[class~="br-error:selection"]::selection,
+[class~="br-error::hover"] > *:hover,
+[class~="br-error::focus"] > *:focus,
+[class~="br-error::active"] > *:active,
+[class~="br-error::selection"] > *::selection, [class~="br-error::"] > * {
+  border-color: var(--error);
+}
+
+.error-1__ {
+  content: "";
+}
+
+.error-1, [class~="error-1:hover"]:hover,
+[class~="error-1:focus"]:focus,
+[class~="error-1:active"]:active,
+[class~="error-1:selection"]::selection,
+[class~="error-1::hover"] > *:hover,
+[class~="error-1::focus"] > *:focus,
+[class~="error-1::active"] > *:active,
+[class~="error-1::selection"] > *::selection, [class~="error-1::"] > * {
+  color: var(--error-1);
+}
+
+.bg-error-1__ {
+  content: "";
+}
+
+.bg-error-1, [class~="bg-error-1:hover"]:hover,
+[class~="bg-error-1:focus"]:focus,
+[class~="bg-error-1:active"]:active,
+[class~="bg-error-1:selection"]::selection,
+[class~="bg-error-1::hover"] > *:hover,
+[class~="bg-error-1::focus"] > *:focus,
+[class~="bg-error-1::active"] > *:active,
+[class~="bg-error-1::selection"] > *::selection, [class~="bg-error-1::"] > * {
+  background-color: var(--error-1);
+}
+
+.br-error-1__ {
+  content: "";
+}
+
+.br-error-1, [class~="br-error-1:hover"]:hover,
+[class~="br-error-1:focus"]:focus,
+[class~="br-error-1:active"]:active,
+[class~="br-error-1:selection"]::selection,
+[class~="br-error-1::hover"] > *:hover,
+[class~="br-error-1::focus"] > *:focus,
+[class~="br-error-1::active"] > *:active,
+[class~="br-error-1::selection"] > *::selection, [class~="br-error-1::"] > * {
+  border-color: var(--error-1);
+}
+
+.error-2__ {
+  content: "";
+}
+
+.error-2, [class~="error-2:hover"]:hover,
+[class~="error-2:focus"]:focus,
+[class~="error-2:active"]:active,
+[class~="error-2:selection"]::selection,
+[class~="error-2::hover"] > *:hover,
+[class~="error-2::focus"] > *:focus,
+[class~="error-2::active"] > *:active,
+[class~="error-2::selection"] > *::selection, [class~="error-2::"] > * {
+  color: var(--error-2);
+}
+
+.bg-error-2__ {
+  content: "";
+}
+
+.bg-error-2, [class~="bg-error-2:hover"]:hover,
+[class~="bg-error-2:focus"]:focus,
+[class~="bg-error-2:active"]:active,
+[class~="bg-error-2:selection"]::selection,
+[class~="bg-error-2::hover"] > *:hover,
+[class~="bg-error-2::focus"] > *:focus,
+[class~="bg-error-2::active"] > *:active,
+[class~="bg-error-2::selection"] > *::selection, [class~="bg-error-2::"] > * {
+  background-color: var(--error-2);
+}
+
+.br-error-2__ {
+  content: "";
+}
+
+.br-error-2, [class~="br-error-2:hover"]:hover,
+[class~="br-error-2:focus"]:focus,
+[class~="br-error-2:active"]:active,
+[class~="br-error-2:selection"]::selection,
+[class~="br-error-2::hover"] > *:hover,
+[class~="br-error-2::focus"] > *:focus,
+[class~="br-error-2::active"] > *:active,
+[class~="br-error-2::selection"] > *::selection, [class~="br-error-2::"] > * {
+  border-color: var(--error-2);
+}
+
+.error-3__ {
+  content: "";
+}
+
+.error-3, [class~="error-3:hover"]:hover,
+[class~="error-3:focus"]:focus,
+[class~="error-3:active"]:active,
+[class~="error-3:selection"]::selection,
+[class~="error-3::hover"] > *:hover,
+[class~="error-3::focus"] > *:focus,
+[class~="error-3::active"] > *:active,
+[class~="error-3::selection"] > *::selection, [class~="error-3::"] > * {
+  color: var(--error-3);
+}
+
+.bg-error-3__ {
+  content: "";
+}
+
+.bg-error-3, [class~="bg-error-3:hover"]:hover,
+[class~="bg-error-3:focus"]:focus,
+[class~="bg-error-3:active"]:active,
+[class~="bg-error-3:selection"]::selection,
+[class~="bg-error-3::hover"] > *:hover,
+[class~="bg-error-3::focus"] > *:focus,
+[class~="bg-error-3::active"] > *:active,
+[class~="bg-error-3::selection"] > *::selection, [class~="bg-error-3::"] > * {
+  background-color: var(--error-3);
+}
+
+.br-error-3__ {
+  content: "";
+}
+
+.br-error-3, [class~="br-error-3:hover"]:hover,
+[class~="br-error-3:focus"]:focus,
+[class~="br-error-3:active"]:active,
+[class~="br-error-3:selection"]::selection,
+[class~="br-error-3::hover"] > *:hover,
+[class~="br-error-3::focus"] > *:focus,
+[class~="br-error-3::active"] > *:active,
+[class~="br-error-3::selection"] > *::selection, [class~="br-error-3::"] > * {
+  border-color: var(--error-3);
+}
+
+.error-4__ {
+  content: "";
+}
+
+.error-4, [class~="error-4:hover"]:hover,
+[class~="error-4:focus"]:focus,
+[class~="error-4:active"]:active,
+[class~="error-4:selection"]::selection,
+[class~="error-4::hover"] > *:hover,
+[class~="error-4::focus"] > *:focus,
+[class~="error-4::active"] > *:active,
+[class~="error-4::selection"] > *::selection, [class~="error-4::"] > * {
+  color: var(--error-4);
+}
+
+.bg-error-4__ {
+  content: "";
+}
+
+.bg-error-4, [class~="bg-error-4:hover"]:hover,
+[class~="bg-error-4:focus"]:focus,
+[class~="bg-error-4:active"]:active,
+[class~="bg-error-4:selection"]::selection,
+[class~="bg-error-4::hover"] > *:hover,
+[class~="bg-error-4::focus"] > *:focus,
+[class~="bg-error-4::active"] > *:active,
+[class~="bg-error-4::selection"] > *::selection, [class~="bg-error-4::"] > * {
+  background-color: var(--error-4);
+}
+
+.br-error-4__ {
+  content: "";
+}
+
+.br-error-4, [class~="br-error-4:hover"]:hover,
+[class~="br-error-4:focus"]:focus,
+[class~="br-error-4:active"]:active,
+[class~="br-error-4:selection"]::selection,
+[class~="br-error-4::hover"] > *:hover,
+[class~="br-error-4::focus"] > *:focus,
+[class~="br-error-4::active"] > *:active,
+[class~="br-error-4::selection"] > *::selection, [class~="br-error-4::"] > * {
+  border-color: var(--error-4);
+}
+
+.error-5__ {
+  content: "";
+}
+
+.error-5, [class~="error-5:hover"]:hover,
+[class~="error-5:focus"]:focus,
+[class~="error-5:active"]:active,
+[class~="error-5:selection"]::selection,
+[class~="error-5::hover"] > *:hover,
+[class~="error-5::focus"] > *:focus,
+[class~="error-5::active"] > *:active,
+[class~="error-5::selection"] > *::selection, [class~="error-5::"] > * {
+  color: var(--error-5);
+}
+
+.bg-error-5__ {
+  content: "";
+}
+
+.bg-error-5, [class~="bg-error-5:hover"]:hover,
+[class~="bg-error-5:focus"]:focus,
+[class~="bg-error-5:active"]:active,
+[class~="bg-error-5:selection"]::selection,
+[class~="bg-error-5::hover"] > *:hover,
+[class~="bg-error-5::focus"] > *:focus,
+[class~="bg-error-5::active"] > *:active,
+[class~="bg-error-5::selection"] > *::selection, [class~="bg-error-5::"] > * {
+  background-color: var(--error-5);
+}
+
+.br-error-5__ {
+  content: "";
+}
+
+.br-error-5, [class~="br-error-5:hover"]:hover,
+[class~="br-error-5:focus"]:focus,
+[class~="br-error-5:active"]:active,
+[class~="br-error-5:selection"]::selection,
+[class~="br-error-5::hover"] > *:hover,
+[class~="br-error-5::focus"] > *:focus,
+[class~="br-error-5::active"] > *:active,
+[class~="br-error-5::selection"] > *::selection, [class~="br-error-5::"] > * {
+  border-color: var(--error-5);
+}
+
+.error-6__ {
+  content: "";
+}
+
+.error-6, [class~="error-6:hover"]:hover,
+[class~="error-6:focus"]:focus,
+[class~="error-6:active"]:active,
+[class~="error-6:selection"]::selection,
+[class~="error-6::hover"] > *:hover,
+[class~="error-6::focus"] > *:focus,
+[class~="error-6::active"] > *:active,
+[class~="error-6::selection"] > *::selection, [class~="error-6::"] > * {
+  color: var(--error-6);
+}
+
+.bg-error-6__ {
+  content: "";
+}
+
+.bg-error-6, [class~="bg-error-6:hover"]:hover,
+[class~="bg-error-6:focus"]:focus,
+[class~="bg-error-6:active"]:active,
+[class~="bg-error-6:selection"]::selection,
+[class~="bg-error-6::hover"] > *:hover,
+[class~="bg-error-6::focus"] > *:focus,
+[class~="bg-error-6::active"] > *:active,
+[class~="bg-error-6::selection"] > *::selection, [class~="bg-error-6::"] > * {
+  background-color: var(--error-6);
+}
+
+.br-error-6__ {
+  content: "";
+}
+
+.br-error-6, [class~="br-error-6:hover"]:hover,
+[class~="br-error-6:focus"]:focus,
+[class~="br-error-6:active"]:active,
+[class~="br-error-6:selection"]::selection,
+[class~="br-error-6::hover"] > *:hover,
+[class~="br-error-6::focus"] > *:focus,
+[class~="br-error-6::active"] > *:active,
+[class~="br-error-6::selection"] > *::selection, [class~="br-error-6::"] > * {
+  border-color: var(--error-6);
+}
+
+.success__ {
+  content: "";
+}
+
+.success, [class~="success:hover"]:hover,
+[class~="success:focus"]:focus,
+[class~="success:active"]:active,
+[class~="success:selection"]::selection,
+[class~="success::hover"] > *:hover,
+[class~="success::focus"] > *:focus,
+[class~="success::active"] > *:active,
+[class~="success::selection"] > *::selection, [class~="success::"] > * {
+  color: var(--success);
+}
+
+.bg-success__ {
+  content: "";
+}
+
+.bg-success, [class~="bg-success:hover"]:hover,
+[class~="bg-success:focus"]:focus,
+[class~="bg-success:active"]:active,
+[class~="bg-success:selection"]::selection,
+[class~="bg-success::hover"] > *:hover,
+[class~="bg-success::focus"] > *:focus,
+[class~="bg-success::active"] > *:active,
+[class~="bg-success::selection"] > *::selection, [class~="bg-success::"] > * {
+  background-color: var(--success);
+}
+
+.br-success__ {
+  content: "";
+}
+
+.br-success, [class~="br-success:hover"]:hover,
+[class~="br-success:focus"]:focus,
+[class~="br-success:active"]:active,
+[class~="br-success:selection"]::selection,
+[class~="br-success::hover"] > *:hover,
+[class~="br-success::focus"] > *:focus,
+[class~="br-success::active"] > *:active,
+[class~="br-success::selection"] > *::selection, [class~="br-success::"] > * {
+  border-color: var(--success);
+}
+
+.success-1__ {
+  content: "";
+}
+
+.success-1, [class~="success-1:hover"]:hover,
+[class~="success-1:focus"]:focus,
+[class~="success-1:active"]:active,
+[class~="success-1:selection"]::selection,
+[class~="success-1::hover"] > *:hover,
+[class~="success-1::focus"] > *:focus,
+[class~="success-1::active"] > *:active,
+[class~="success-1::selection"] > *::selection, [class~="success-1::"] > * {
+  color: var(--success-1);
+}
+
+.bg-success-1__ {
+  content: "";
+}
+
+.bg-success-1, [class~="bg-success-1:hover"]:hover,
+[class~="bg-success-1:focus"]:focus,
+[class~="bg-success-1:active"]:active,
+[class~="bg-success-1:selection"]::selection,
+[class~="bg-success-1::hover"] > *:hover,
+[class~="bg-success-1::focus"] > *:focus,
+[class~="bg-success-1::active"] > *:active,
+[class~="bg-success-1::selection"] > *::selection, [class~="bg-success-1::"] > * {
+  background-color: var(--success-1);
+}
+
+.br-success-1__ {
+  content: "";
+}
+
+.br-success-1, [class~="br-success-1:hover"]:hover,
+[class~="br-success-1:focus"]:focus,
+[class~="br-success-1:active"]:active,
+[class~="br-success-1:selection"]::selection,
+[class~="br-success-1::hover"] > *:hover,
+[class~="br-success-1::focus"] > *:focus,
+[class~="br-success-1::active"] > *:active,
+[class~="br-success-1::selection"] > *::selection, [class~="br-success-1::"] > * {
+  border-color: var(--success-1);
+}
+
+.success-2__ {
+  content: "";
+}
+
+.success-2, [class~="success-2:hover"]:hover,
+[class~="success-2:focus"]:focus,
+[class~="success-2:active"]:active,
+[class~="success-2:selection"]::selection,
+[class~="success-2::hover"] > *:hover,
+[class~="success-2::focus"] > *:focus,
+[class~="success-2::active"] > *:active,
+[class~="success-2::selection"] > *::selection, [class~="success-2::"] > * {
+  color: var(--success-2);
+}
+
+.bg-success-2__ {
+  content: "";
+}
+
+.bg-success-2, [class~="bg-success-2:hover"]:hover,
+[class~="bg-success-2:focus"]:focus,
+[class~="bg-success-2:active"]:active,
+[class~="bg-success-2:selection"]::selection,
+[class~="bg-success-2::hover"] > *:hover,
+[class~="bg-success-2::focus"] > *:focus,
+[class~="bg-success-2::active"] > *:active,
+[class~="bg-success-2::selection"] > *::selection, [class~="bg-success-2::"] > * {
+  background-color: var(--success-2);
+}
+
+.br-success-2__ {
+  content: "";
+}
+
+.br-success-2, [class~="br-success-2:hover"]:hover,
+[class~="br-success-2:focus"]:focus,
+[class~="br-success-2:active"]:active,
+[class~="br-success-2:selection"]::selection,
+[class~="br-success-2::hover"] > *:hover,
+[class~="br-success-2::focus"] > *:focus,
+[class~="br-success-2::active"] > *:active,
+[class~="br-success-2::selection"] > *::selection, [class~="br-success-2::"] > * {
+  border-color: var(--success-2);
+}
+
+.success-3__ {
+  content: "";
+}
+
+.success-3, [class~="success-3:hover"]:hover,
+[class~="success-3:focus"]:focus,
+[class~="success-3:active"]:active,
+[class~="success-3:selection"]::selection,
+[class~="success-3::hover"] > *:hover,
+[class~="success-3::focus"] > *:focus,
+[class~="success-3::active"] > *:active,
+[class~="success-3::selection"] > *::selection, [class~="success-3::"] > * {
+  color: var(--success-3);
+}
+
+.bg-success-3__ {
+  content: "";
+}
+
+.bg-success-3, [class~="bg-success-3:hover"]:hover,
+[class~="bg-success-3:focus"]:focus,
+[class~="bg-success-3:active"]:active,
+[class~="bg-success-3:selection"]::selection,
+[class~="bg-success-3::hover"] > *:hover,
+[class~="bg-success-3::focus"] > *:focus,
+[class~="bg-success-3::active"] > *:active,
+[class~="bg-success-3::selection"] > *::selection, [class~="bg-success-3::"] > * {
+  background-color: var(--success-3);
+}
+
+.br-success-3__ {
+  content: "";
+}
+
+.br-success-3, [class~="br-success-3:hover"]:hover,
+[class~="br-success-3:focus"]:focus,
+[class~="br-success-3:active"]:active,
+[class~="br-success-3:selection"]::selection,
+[class~="br-success-3::hover"] > *:hover,
+[class~="br-success-3::focus"] > *:focus,
+[class~="br-success-3::active"] > *:active,
+[class~="br-success-3::selection"] > *::selection, [class~="br-success-3::"] > * {
+  border-color: var(--success-3);
+}
+
+.success-4__ {
+  content: "";
+}
+
+.success-4, [class~="success-4:hover"]:hover,
+[class~="success-4:focus"]:focus,
+[class~="success-4:active"]:active,
+[class~="success-4:selection"]::selection,
+[class~="success-4::hover"] > *:hover,
+[class~="success-4::focus"] > *:focus,
+[class~="success-4::active"] > *:active,
+[class~="success-4::selection"] > *::selection, [class~="success-4::"] > * {
+  color: var(--success-4);
+}
+
+.bg-success-4__ {
+  content: "";
+}
+
+.bg-success-4, [class~="bg-success-4:hover"]:hover,
+[class~="bg-success-4:focus"]:focus,
+[class~="bg-success-4:active"]:active,
+[class~="bg-success-4:selection"]::selection,
+[class~="bg-success-4::hover"] > *:hover,
+[class~="bg-success-4::focus"] > *:focus,
+[class~="bg-success-4::active"] > *:active,
+[class~="bg-success-4::selection"] > *::selection, [class~="bg-success-4::"] > * {
+  background-color: var(--success-4);
+}
+
+.br-success-4__ {
+  content: "";
+}
+
+.br-success-4, [class~="br-success-4:hover"]:hover,
+[class~="br-success-4:focus"]:focus,
+[class~="br-success-4:active"]:active,
+[class~="br-success-4:selection"]::selection,
+[class~="br-success-4::hover"] > *:hover,
+[class~="br-success-4::focus"] > *:focus,
+[class~="br-success-4::active"] > *:active,
+[class~="br-success-4::selection"] > *::selection, [class~="br-success-4::"] > * {
+  border-color: var(--success-4);
+}
+
+.success-5__ {
+  content: "";
+}
+
+.success-5, [class~="success-5:hover"]:hover,
+[class~="success-5:focus"]:focus,
+[class~="success-5:active"]:active,
+[class~="success-5:selection"]::selection,
+[class~="success-5::hover"] > *:hover,
+[class~="success-5::focus"] > *:focus,
+[class~="success-5::active"] > *:active,
+[class~="success-5::selection"] > *::selection, [class~="success-5::"] > * {
+  color: var(--success-5);
+}
+
+.bg-success-5__ {
+  content: "";
+}
+
+.bg-success-5, [class~="bg-success-5:hover"]:hover,
+[class~="bg-success-5:focus"]:focus,
+[class~="bg-success-5:active"]:active,
+[class~="bg-success-5:selection"]::selection,
+[class~="bg-success-5::hover"] > *:hover,
+[class~="bg-success-5::focus"] > *:focus,
+[class~="bg-success-5::active"] > *:active,
+[class~="bg-success-5::selection"] > *::selection, [class~="bg-success-5::"] > * {
+  background-color: var(--success-5);
+}
+
+.br-success-5__ {
+  content: "";
+}
+
+.br-success-5, [class~="br-success-5:hover"]:hover,
+[class~="br-success-5:focus"]:focus,
+[class~="br-success-5:active"]:active,
+[class~="br-success-5:selection"]::selection,
+[class~="br-success-5::hover"] > *:hover,
+[class~="br-success-5::focus"] > *:focus,
+[class~="br-success-5::active"] > *:active,
+[class~="br-success-5::selection"] > *::selection, [class~="br-success-5::"] > * {
+  border-color: var(--success-5);
+}
+
+.success-6__ {
+  content: "";
+}
+
+.success-6, [class~="success-6:hover"]:hover,
+[class~="success-6:focus"]:focus,
+[class~="success-6:active"]:active,
+[class~="success-6:selection"]::selection,
+[class~="success-6::hover"] > *:hover,
+[class~="success-6::focus"] > *:focus,
+[class~="success-6::active"] > *:active,
+[class~="success-6::selection"] > *::selection, [class~="success-6::"] > * {
+  color: var(--success-6);
+}
+
+.bg-success-6__ {
+  content: "";
+}
+
+.bg-success-6, [class~="bg-success-6:hover"]:hover,
+[class~="bg-success-6:focus"]:focus,
+[class~="bg-success-6:active"]:active,
+[class~="bg-success-6:selection"]::selection,
+[class~="bg-success-6::hover"] > *:hover,
+[class~="bg-success-6::focus"] > *:focus,
+[class~="bg-success-6::active"] > *:active,
+[class~="bg-success-6::selection"] > *::selection, [class~="bg-success-6::"] > * {
+  background-color: var(--success-6);
+}
+
+.br-success-6__ {
+  content: "";
+}
+
+.br-success-6, [class~="br-success-6:hover"]:hover,
+[class~="br-success-6:focus"]:focus,
+[class~="br-success-6:active"]:active,
+[class~="br-success-6:selection"]::selection,
+[class~="br-success-6::hover"] > *:hover,
+[class~="br-success-6::focus"] > *:focus,
+[class~="br-success-6::active"] > *:active,
+[class~="br-success-6::selection"] > *::selection, [class~="br-success-6::"] > * {
+  border-color: var(--success-6);
+}
+
+.info__ {
+  content: "";
+}
+
+.info, [class~="info:hover"]:hover,
+[class~="info:focus"]:focus,
+[class~="info:active"]:active,
+[class~="info:selection"]::selection,
+[class~="info::hover"] > *:hover,
+[class~="info::focus"] > *:focus,
+[class~="info::active"] > *:active,
+[class~="info::selection"] > *::selection, [class~="info::"] > * {
+  color: var(--info);
+}
+
+.bg-info__ {
+  content: "";
+}
+
+.bg-info, [class~="bg-info:hover"]:hover,
+[class~="bg-info:focus"]:focus,
+[class~="bg-info:active"]:active,
+[class~="bg-info:selection"]::selection,
+[class~="bg-info::hover"] > *:hover,
+[class~="bg-info::focus"] > *:focus,
+[class~="bg-info::active"] > *:active,
+[class~="bg-info::selection"] > *::selection, [class~="bg-info::"] > * {
+  background-color: var(--info);
+}
+
+.br-info__ {
+  content: "";
+}
+
+.br-info, [class~="br-info:hover"]:hover,
+[class~="br-info:focus"]:focus,
+[class~="br-info:active"]:active,
+[class~="br-info:selection"]::selection,
+[class~="br-info::hover"] > *:hover,
+[class~="br-info::focus"] > *:focus,
+[class~="br-info::active"] > *:active,
+[class~="br-info::selection"] > *::selection, [class~="br-info::"] > * {
+  border-color: var(--info);
+}
+
+.info-1__ {
+  content: "";
+}
+
+.info-1, [class~="info-1:hover"]:hover,
+[class~="info-1:focus"]:focus,
+[class~="info-1:active"]:active,
+[class~="info-1:selection"]::selection,
+[class~="info-1::hover"] > *:hover,
+[class~="info-1::focus"] > *:focus,
+[class~="info-1::active"] > *:active,
+[class~="info-1::selection"] > *::selection, [class~="info-1::"] > * {
+  color: var(--info-1);
+}
+
+.bg-info-1__ {
+  content: "";
+}
+
+.bg-info-1, [class~="bg-info-1:hover"]:hover,
+[class~="bg-info-1:focus"]:focus,
+[class~="bg-info-1:active"]:active,
+[class~="bg-info-1:selection"]::selection,
+[class~="bg-info-1::hover"] > *:hover,
+[class~="bg-info-1::focus"] > *:focus,
+[class~="bg-info-1::active"] > *:active,
+[class~="bg-info-1::selection"] > *::selection, [class~="bg-info-1::"] > * {
+  background-color: var(--info-1);
+}
+
+.br-info-1__ {
+  content: "";
+}
+
+.br-info-1, [class~="br-info-1:hover"]:hover,
+[class~="br-info-1:focus"]:focus,
+[class~="br-info-1:active"]:active,
+[class~="br-info-1:selection"]::selection,
+[class~="br-info-1::hover"] > *:hover,
+[class~="br-info-1::focus"] > *:focus,
+[class~="br-info-1::active"] > *:active,
+[class~="br-info-1::selection"] > *::selection, [class~="br-info-1::"] > * {
+  border-color: var(--info-1);
+}
+
+.info-2__ {
+  content: "";
+}
+
+.info-2, [class~="info-2:hover"]:hover,
+[class~="info-2:focus"]:focus,
+[class~="info-2:active"]:active,
+[class~="info-2:selection"]::selection,
+[class~="info-2::hover"] > *:hover,
+[class~="info-2::focus"] > *:focus,
+[class~="info-2::active"] > *:active,
+[class~="info-2::selection"] > *::selection, [class~="info-2::"] > * {
+  color: var(--info-2);
+}
+
+.bg-info-2__ {
+  content: "";
+}
+
+.bg-info-2, [class~="bg-info-2:hover"]:hover,
+[class~="bg-info-2:focus"]:focus,
+[class~="bg-info-2:active"]:active,
+[class~="bg-info-2:selection"]::selection,
+[class~="bg-info-2::hover"] > *:hover,
+[class~="bg-info-2::focus"] > *:focus,
+[class~="bg-info-2::active"] > *:active,
+[class~="bg-info-2::selection"] > *::selection, [class~="bg-info-2::"] > * {
+  background-color: var(--info-2);
+}
+
+.br-info-2__ {
+  content: "";
+}
+
+.br-info-2, [class~="br-info-2:hover"]:hover,
+[class~="br-info-2:focus"]:focus,
+[class~="br-info-2:active"]:active,
+[class~="br-info-2:selection"]::selection,
+[class~="br-info-2::hover"] > *:hover,
+[class~="br-info-2::focus"] > *:focus,
+[class~="br-info-2::active"] > *:active,
+[class~="br-info-2::selection"] > *::selection, [class~="br-info-2::"] > * {
+  border-color: var(--info-2);
+}
+
+.info-3__ {
+  content: "";
+}
+
+.info-3, [class~="info-3:hover"]:hover,
+[class~="info-3:focus"]:focus,
+[class~="info-3:active"]:active,
+[class~="info-3:selection"]::selection,
+[class~="info-3::hover"] > *:hover,
+[class~="info-3::focus"] > *:focus,
+[class~="info-3::active"] > *:active,
+[class~="info-3::selection"] > *::selection, [class~="info-3::"] > * {
+  color: var(--info-3);
+}
+
+.bg-info-3__ {
+  content: "";
+}
+
+.bg-info-3, [class~="bg-info-3:hover"]:hover,
+[class~="bg-info-3:focus"]:focus,
+[class~="bg-info-3:active"]:active,
+[class~="bg-info-3:selection"]::selection,
+[class~="bg-info-3::hover"] > *:hover,
+[class~="bg-info-3::focus"] > *:focus,
+[class~="bg-info-3::active"] > *:active,
+[class~="bg-info-3::selection"] > *::selection, [class~="bg-info-3::"] > * {
+  background-color: var(--info-3);
+}
+
+.br-info-3__ {
+  content: "";
+}
+
+.br-info-3, [class~="br-info-3:hover"]:hover,
+[class~="br-info-3:focus"]:focus,
+[class~="br-info-3:active"]:active,
+[class~="br-info-3:selection"]::selection,
+[class~="br-info-3::hover"] > *:hover,
+[class~="br-info-3::focus"] > *:focus,
+[class~="br-info-3::active"] > *:active,
+[class~="br-info-3::selection"] > *::selection, [class~="br-info-3::"] > * {
+  border-color: var(--info-3);
+}
+
+.info-4__ {
+  content: "";
+}
+
+.info-4, [class~="info-4:hover"]:hover,
+[class~="info-4:focus"]:focus,
+[class~="info-4:active"]:active,
+[class~="info-4:selection"]::selection,
+[class~="info-4::hover"] > *:hover,
+[class~="info-4::focus"] > *:focus,
+[class~="info-4::active"] > *:active,
+[class~="info-4::selection"] > *::selection, [class~="info-4::"] > * {
+  color: var(--info-4);
+}
+
+.bg-info-4__ {
+  content: "";
+}
+
+.bg-info-4, [class~="bg-info-4:hover"]:hover,
+[class~="bg-info-4:focus"]:focus,
+[class~="bg-info-4:active"]:active,
+[class~="bg-info-4:selection"]::selection,
+[class~="bg-info-4::hover"] > *:hover,
+[class~="bg-info-4::focus"] > *:focus,
+[class~="bg-info-4::active"] > *:active,
+[class~="bg-info-4::selection"] > *::selection, [class~="bg-info-4::"] > * {
+  background-color: var(--info-4);
+}
+
+.br-info-4__ {
+  content: "";
+}
+
+.br-info-4, [class~="br-info-4:hover"]:hover,
+[class~="br-info-4:focus"]:focus,
+[class~="br-info-4:active"]:active,
+[class~="br-info-4:selection"]::selection,
+[class~="br-info-4::hover"] > *:hover,
+[class~="br-info-4::focus"] > *:focus,
+[class~="br-info-4::active"] > *:active,
+[class~="br-info-4::selection"] > *::selection, [class~="br-info-4::"] > * {
+  border-color: var(--info-4);
+}
+
+.info-5__ {
+  content: "";
+}
+
+.info-5, [class~="info-5:hover"]:hover,
+[class~="info-5:focus"]:focus,
+[class~="info-5:active"]:active,
+[class~="info-5:selection"]::selection,
+[class~="info-5::hover"] > *:hover,
+[class~="info-5::focus"] > *:focus,
+[class~="info-5::active"] > *:active,
+[class~="info-5::selection"] > *::selection, [class~="info-5::"] > * {
+  color: var(--info-5);
+}
+
+.bg-info-5__ {
+  content: "";
+}
+
+.bg-info-5, [class~="bg-info-5:hover"]:hover,
+[class~="bg-info-5:focus"]:focus,
+[class~="bg-info-5:active"]:active,
+[class~="bg-info-5:selection"]::selection,
+[class~="bg-info-5::hover"] > *:hover,
+[class~="bg-info-5::focus"] > *:focus,
+[class~="bg-info-5::active"] > *:active,
+[class~="bg-info-5::selection"] > *::selection, [class~="bg-info-5::"] > * {
+  background-color: var(--info-5);
+}
+
+.br-info-5__ {
+  content: "";
+}
+
+.br-info-5, [class~="br-info-5:hover"]:hover,
+[class~="br-info-5:focus"]:focus,
+[class~="br-info-5:active"]:active,
+[class~="br-info-5:selection"]::selection,
+[class~="br-info-5::hover"] > *:hover,
+[class~="br-info-5::focus"] > *:focus,
+[class~="br-info-5::active"] > *:active,
+[class~="br-info-5::selection"] > *::selection, [class~="br-info-5::"] > * {
+  border-color: var(--info-5);
+}
+
+.info-6__ {
+  content: "";
+}
+
+.info-6, [class~="info-6:hover"]:hover,
+[class~="info-6:focus"]:focus,
+[class~="info-6:active"]:active,
+[class~="info-6:selection"]::selection,
+[class~="info-6::hover"] > *:hover,
+[class~="info-6::focus"] > *:focus,
+[class~="info-6::active"] > *:active,
+[class~="info-6::selection"] > *::selection, [class~="info-6::"] > * {
+  color: var(--info-6);
+}
+
+.bg-info-6__ {
+  content: "";
+}
+
+.bg-info-6, [class~="bg-info-6:hover"]:hover,
+[class~="bg-info-6:focus"]:focus,
+[class~="bg-info-6:active"]:active,
+[class~="bg-info-6:selection"]::selection,
+[class~="bg-info-6::hover"] > *:hover,
+[class~="bg-info-6::focus"] > *:focus,
+[class~="bg-info-6::active"] > *:active,
+[class~="bg-info-6::selection"] > *::selection, [class~="bg-info-6::"] > * {
+  background-color: var(--info-6);
+}
+
+.br-info-6__ {
+  content: "";
+}
+
+.br-info-6, [class~="br-info-6:hover"]:hover,
+[class~="br-info-6:focus"]:focus,
+[class~="br-info-6:active"]:active,
+[class~="br-info-6:selection"]::selection,
+[class~="br-info-6::hover"] > *:hover,
+[class~="br-info-6::focus"] > *:focus,
+[class~="br-info-6::active"] > *:active,
+[class~="br-info-6::selection"] > *::selection, [class~="br-info-6::"] > * {
+  border-color: var(--info-6);
+}
+
+.warning__ {
+  content: "";
+}
+
+.warning, [class~="warning:hover"]:hover,
+[class~="warning:focus"]:focus,
+[class~="warning:active"]:active,
+[class~="warning:selection"]::selection,
+[class~="warning::hover"] > *:hover,
+[class~="warning::focus"] > *:focus,
+[class~="warning::active"] > *:active,
+[class~="warning::selection"] > *::selection, [class~="warning::"] > * {
+  color: var(--warning);
+}
+
+.bg-warning__ {
+  content: "";
+}
+
+.bg-warning, [class~="bg-warning:hover"]:hover,
+[class~="bg-warning:focus"]:focus,
+[class~="bg-warning:active"]:active,
+[class~="bg-warning:selection"]::selection,
+[class~="bg-warning::hover"] > *:hover,
+[class~="bg-warning::focus"] > *:focus,
+[class~="bg-warning::active"] > *:active,
+[class~="bg-warning::selection"] > *::selection, [class~="bg-warning::"] > * {
+  background-color: var(--warning);
+}
+
+.br-warning__ {
+  content: "";
+}
+
+.br-warning, [class~="br-warning:hover"]:hover,
+[class~="br-warning:focus"]:focus,
+[class~="br-warning:active"]:active,
+[class~="br-warning:selection"]::selection,
+[class~="br-warning::hover"] > *:hover,
+[class~="br-warning::focus"] > *:focus,
+[class~="br-warning::active"] > *:active,
+[class~="br-warning::selection"] > *::selection, [class~="br-warning::"] > * {
+  border-color: var(--warning);
+}
+
+.warning-1__ {
+  content: "";
+}
+
+.warning-1, [class~="warning-1:hover"]:hover,
+[class~="warning-1:focus"]:focus,
+[class~="warning-1:active"]:active,
+[class~="warning-1:selection"]::selection,
+[class~="warning-1::hover"] > *:hover,
+[class~="warning-1::focus"] > *:focus,
+[class~="warning-1::active"] > *:active,
+[class~="warning-1::selection"] > *::selection, [class~="warning-1::"] > * {
+  color: var(--warning-1);
+}
+
+.bg-warning-1__ {
+  content: "";
+}
+
+.bg-warning-1, [class~="bg-warning-1:hover"]:hover,
+[class~="bg-warning-1:focus"]:focus,
+[class~="bg-warning-1:active"]:active,
+[class~="bg-warning-1:selection"]::selection,
+[class~="bg-warning-1::hover"] > *:hover,
+[class~="bg-warning-1::focus"] > *:focus,
+[class~="bg-warning-1::active"] > *:active,
+[class~="bg-warning-1::selection"] > *::selection, [class~="bg-warning-1::"] > * {
+  background-color: var(--warning-1);
+}
+
+.br-warning-1__ {
+  content: "";
+}
+
+.br-warning-1, [class~="br-warning-1:hover"]:hover,
+[class~="br-warning-1:focus"]:focus,
+[class~="br-warning-1:active"]:active,
+[class~="br-warning-1:selection"]::selection,
+[class~="br-warning-1::hover"] > *:hover,
+[class~="br-warning-1::focus"] > *:focus,
+[class~="br-warning-1::active"] > *:active,
+[class~="br-warning-1::selection"] > *::selection, [class~="br-warning-1::"] > * {
+  border-color: var(--warning-1);
+}
+
+.warning-2__ {
+  content: "";
+}
+
+.warning-2, [class~="warning-2:hover"]:hover,
+[class~="warning-2:focus"]:focus,
+[class~="warning-2:active"]:active,
+[class~="warning-2:selection"]::selection,
+[class~="warning-2::hover"] > *:hover,
+[class~="warning-2::focus"] > *:focus,
+[class~="warning-2::active"] > *:active,
+[class~="warning-2::selection"] > *::selection, [class~="warning-2::"] > * {
+  color: var(--warning-2);
+}
+
+.bg-warning-2__ {
+  content: "";
+}
+
+.bg-warning-2, [class~="bg-warning-2:hover"]:hover,
+[class~="bg-warning-2:focus"]:focus,
+[class~="bg-warning-2:active"]:active,
+[class~="bg-warning-2:selection"]::selection,
+[class~="bg-warning-2::hover"] > *:hover,
+[class~="bg-warning-2::focus"] > *:focus,
+[class~="bg-warning-2::active"] > *:active,
+[class~="bg-warning-2::selection"] > *::selection, [class~="bg-warning-2::"] > * {
+  background-color: var(--warning-2);
+}
+
+.br-warning-2__ {
+  content: "";
+}
+
+.br-warning-2, [class~="br-warning-2:hover"]:hover,
+[class~="br-warning-2:focus"]:focus,
+[class~="br-warning-2:active"]:active,
+[class~="br-warning-2:selection"]::selection,
+[class~="br-warning-2::hover"] > *:hover,
+[class~="br-warning-2::focus"] > *:focus,
+[class~="br-warning-2::active"] > *:active,
+[class~="br-warning-2::selection"] > *::selection, [class~="br-warning-2::"] > * {
+  border-color: var(--warning-2);
+}
+
+.warning-3__ {
+  content: "";
+}
+
+.warning-3, [class~="warning-3:hover"]:hover,
+[class~="warning-3:focus"]:focus,
+[class~="warning-3:active"]:active,
+[class~="warning-3:selection"]::selection,
+[class~="warning-3::hover"] > *:hover,
+[class~="warning-3::focus"] > *:focus,
+[class~="warning-3::active"] > *:active,
+[class~="warning-3::selection"] > *::selection, [class~="warning-3::"] > * {
+  color: var(--warning-3);
+}
+
+.bg-warning-3__ {
+  content: "";
+}
+
+.bg-warning-3, [class~="bg-warning-3:hover"]:hover,
+[class~="bg-warning-3:focus"]:focus,
+[class~="bg-warning-3:active"]:active,
+[class~="bg-warning-3:selection"]::selection,
+[class~="bg-warning-3::hover"] > *:hover,
+[class~="bg-warning-3::focus"] > *:focus,
+[class~="bg-warning-3::active"] > *:active,
+[class~="bg-warning-3::selection"] > *::selection, [class~="bg-warning-3::"] > * {
+  background-color: var(--warning-3);
+}
+
+.br-warning-3__ {
+  content: "";
+}
+
+.br-warning-3, [class~="br-warning-3:hover"]:hover,
+[class~="br-warning-3:focus"]:focus,
+[class~="br-warning-3:active"]:active,
+[class~="br-warning-3:selection"]::selection,
+[class~="br-warning-3::hover"] > *:hover,
+[class~="br-warning-3::focus"] > *:focus,
+[class~="br-warning-3::active"] > *:active,
+[class~="br-warning-3::selection"] > *::selection, [class~="br-warning-3::"] > * {
+  border-color: var(--warning-3);
+}
+
+.warning-4__ {
+  content: "";
+}
+
+.warning-4, [class~="warning-4:hover"]:hover,
+[class~="warning-4:focus"]:focus,
+[class~="warning-4:active"]:active,
+[class~="warning-4:selection"]::selection,
+[class~="warning-4::hover"] > *:hover,
+[class~="warning-4::focus"] > *:focus,
+[class~="warning-4::active"] > *:active,
+[class~="warning-4::selection"] > *::selection, [class~="warning-4::"] > * {
+  color: var(--warning-4);
+}
+
+.bg-warning-4__ {
+  content: "";
+}
+
+.bg-warning-4, [class~="bg-warning-4:hover"]:hover,
+[class~="bg-warning-4:focus"]:focus,
+[class~="bg-warning-4:active"]:active,
+[class~="bg-warning-4:selection"]::selection,
+[class~="bg-warning-4::hover"] > *:hover,
+[class~="bg-warning-4::focus"] > *:focus,
+[class~="bg-warning-4::active"] > *:active,
+[class~="bg-warning-4::selection"] > *::selection, [class~="bg-warning-4::"] > * {
+  background-color: var(--warning-4);
+}
+
+.br-warning-4__ {
+  content: "";
+}
+
+.br-warning-4, [class~="br-warning-4:hover"]:hover,
+[class~="br-warning-4:focus"]:focus,
+[class~="br-warning-4:active"]:active,
+[class~="br-warning-4:selection"]::selection,
+[class~="br-warning-4::hover"] > *:hover,
+[class~="br-warning-4::focus"] > *:focus,
+[class~="br-warning-4::active"] > *:active,
+[class~="br-warning-4::selection"] > *::selection, [class~="br-warning-4::"] > * {
+  border-color: var(--warning-4);
+}
+
+.warning-5__ {
+  content: "";
+}
+
+.warning-5, [class~="warning-5:hover"]:hover,
+[class~="warning-5:focus"]:focus,
+[class~="warning-5:active"]:active,
+[class~="warning-5:selection"]::selection,
+[class~="warning-5::hover"] > *:hover,
+[class~="warning-5::focus"] > *:focus,
+[class~="warning-5::active"] > *:active,
+[class~="warning-5::selection"] > *::selection, [class~="warning-5::"] > * {
+  color: var(--warning-5);
+}
+
+.bg-warning-5__ {
+  content: "";
+}
+
+.bg-warning-5, [class~="bg-warning-5:hover"]:hover,
+[class~="bg-warning-5:focus"]:focus,
+[class~="bg-warning-5:active"]:active,
+[class~="bg-warning-5:selection"]::selection,
+[class~="bg-warning-5::hover"] > *:hover,
+[class~="bg-warning-5::focus"] > *:focus,
+[class~="bg-warning-5::active"] > *:active,
+[class~="bg-warning-5::selection"] > *::selection, [class~="bg-warning-5::"] > * {
+  background-color: var(--warning-5);
+}
+
+.br-warning-5__ {
+  content: "";
+}
+
+.br-warning-5, [class~="br-warning-5:hover"]:hover,
+[class~="br-warning-5:focus"]:focus,
+[class~="br-warning-5:active"]:active,
+[class~="br-warning-5:selection"]::selection,
+[class~="br-warning-5::hover"] > *:hover,
+[class~="br-warning-5::focus"] > *:focus,
+[class~="br-warning-5::active"] > *:active,
+[class~="br-warning-5::selection"] > *::selection, [class~="br-warning-5::"] > * {
+  border-color: var(--warning-5);
+}
+
+.warning-6__ {
+  content: "";
+}
+
+.warning-6, [class~="warning-6:hover"]:hover,
+[class~="warning-6:focus"]:focus,
+[class~="warning-6:active"]:active,
+[class~="warning-6:selection"]::selection,
+[class~="warning-6::hover"] > *:hover,
+[class~="warning-6::focus"] > *:focus,
+[class~="warning-6::active"] > *:active,
+[class~="warning-6::selection"] > *::selection, [class~="warning-6::"] > * {
+  color: var(--warning-6);
+}
+
+.bg-warning-6__ {
+  content: "";
+}
+
+.bg-warning-6, [class~="bg-warning-6:hover"]:hover,
+[class~="bg-warning-6:focus"]:focus,
+[class~="bg-warning-6:active"]:active,
+[class~="bg-warning-6:selection"]::selection,
+[class~="bg-warning-6::hover"] > *:hover,
+[class~="bg-warning-6::focus"] > *:focus,
+[class~="bg-warning-6::active"] > *:active,
+[class~="bg-warning-6::selection"] > *::selection, [class~="bg-warning-6::"] > * {
+  background-color: var(--warning-6);
+}
+
+.br-warning-6__ {
+  content: "";
+}
+
+.br-warning-6, [class~="br-warning-6:hover"]:hover,
+[class~="br-warning-6:focus"]:focus,
+[class~="br-warning-6:active"]:active,
+[class~="br-warning-6:selection"]::selection,
+[class~="br-warning-6::hover"] > *:hover,
+[class~="br-warning-6::focus"] > *:focus,
+[class~="br-warning-6::active"] > *:active,
+[class~="br-warning-6::selection"] > *::selection, [class~="br-warning-6::"] > * {
+  border-color: var(--warning-6);
+}
+
+.white__ {
+  content: "";
+}
+
+.white, [class~="white:hover"]:hover,
+[class~="white:focus"]:focus,
+[class~="white:active"]:active,
+[class~="white:selection"]::selection,
+[class~="white::hover"] > *:hover,
+[class~="white::focus"] > *:focus,
+[class~="white::active"] > *:active,
+[class~="white::selection"] > *::selection, [class~="white::"] > * {
+  color: var(--white);
+}
+
+.bg-white__ {
+  content: "";
+}
+
+.bg-white, [class~="bg-white:hover"]:hover,
+[class~="bg-white:focus"]:focus,
+[class~="bg-white:active"]:active,
+[class~="bg-white:selection"]::selection,
+[class~="bg-white::hover"] > *:hover,
+[class~="bg-white::focus"] > *:focus,
+[class~="bg-white::active"] > *:active,
+[class~="bg-white::selection"] > *::selection, [class~="bg-white::"] > * {
+  background-color: var(--white);
+}
+
+.br-white__ {
+  content: "";
+}
+
+.br-white, [class~="br-white:hover"]:hover,
+[class~="br-white:focus"]:focus,
+[class~="br-white:active"]:active,
+[class~="br-white:selection"]::selection,
+[class~="br-white::hover"] > *:hover,
+[class~="br-white::focus"] > *:focus,
+[class~="br-white::active"] > *:active,
+[class~="br-white::selection"] > *::selection, [class~="br-white::"] > * {
+  border-color: var(--white);
+}
+
+.white-1__ {
+  content: "";
+}
+
+.white-1, [class~="white-1:hover"]:hover,
+[class~="white-1:focus"]:focus,
+[class~="white-1:active"]:active,
+[class~="white-1:selection"]::selection,
+[class~="white-1::hover"] > *:hover,
+[class~="white-1::focus"] > *:focus,
+[class~="white-1::active"] > *:active,
+[class~="white-1::selection"] > *::selection, [class~="white-1::"] > * {
+  color: var(--white-1);
+}
+
+.bg-white-1__ {
+  content: "";
+}
+
+.bg-white-1, [class~="bg-white-1:hover"]:hover,
+[class~="bg-white-1:focus"]:focus,
+[class~="bg-white-1:active"]:active,
+[class~="bg-white-1:selection"]::selection,
+[class~="bg-white-1::hover"] > *:hover,
+[class~="bg-white-1::focus"] > *:focus,
+[class~="bg-white-1::active"] > *:active,
+[class~="bg-white-1::selection"] > *::selection, [class~="bg-white-1::"] > * {
+  background-color: var(--white-1);
+}
+
+.br-white-1__ {
+  content: "";
+}
+
+.br-white-1, [class~="br-white-1:hover"]:hover,
+[class~="br-white-1:focus"]:focus,
+[class~="br-white-1:active"]:active,
+[class~="br-white-1:selection"]::selection,
+[class~="br-white-1::hover"] > *:hover,
+[class~="br-white-1::focus"] > *:focus,
+[class~="br-white-1::active"] > *:active,
+[class~="br-white-1::selection"] > *::selection, [class~="br-white-1::"] > * {
+  border-color: var(--white-1);
+}
+
+.white-2__ {
+  content: "";
+}
+
+.white-2, [class~="white-2:hover"]:hover,
+[class~="white-2:focus"]:focus,
+[class~="white-2:active"]:active,
+[class~="white-2:selection"]::selection,
+[class~="white-2::hover"] > *:hover,
+[class~="white-2::focus"] > *:focus,
+[class~="white-2::active"] > *:active,
+[class~="white-2::selection"] > *::selection, [class~="white-2::"] > * {
+  color: var(--white-2);
+}
+
+.bg-white-2__ {
+  content: "";
+}
+
+.bg-white-2, [class~="bg-white-2:hover"]:hover,
+[class~="bg-white-2:focus"]:focus,
+[class~="bg-white-2:active"]:active,
+[class~="bg-white-2:selection"]::selection,
+[class~="bg-white-2::hover"] > *:hover,
+[class~="bg-white-2::focus"] > *:focus,
+[class~="bg-white-2::active"] > *:active,
+[class~="bg-white-2::selection"] > *::selection, [class~="bg-white-2::"] > * {
+  background-color: var(--white-2);
+}
+
+.br-white-2__ {
+  content: "";
+}
+
+.br-white-2, [class~="br-white-2:hover"]:hover,
+[class~="br-white-2:focus"]:focus,
+[class~="br-white-2:active"]:active,
+[class~="br-white-2:selection"]::selection,
+[class~="br-white-2::hover"] > *:hover,
+[class~="br-white-2::focus"] > *:focus,
+[class~="br-white-2::active"] > *:active,
+[class~="br-white-2::selection"] > *::selection, [class~="br-white-2::"] > * {
+  border-color: var(--white-2);
+}
+
+.white-3__ {
+  content: "";
+}
+
+.white-3, [class~="white-3:hover"]:hover,
+[class~="white-3:focus"]:focus,
+[class~="white-3:active"]:active,
+[class~="white-3:selection"]::selection,
+[class~="white-3::hover"] > *:hover,
+[class~="white-3::focus"] > *:focus,
+[class~="white-3::active"] > *:active,
+[class~="white-3::selection"] > *::selection, [class~="white-3::"] > * {
+  color: var(--white-3);
+}
+
+.bg-white-3__ {
+  content: "";
+}
+
+.bg-white-3, [class~="bg-white-3:hover"]:hover,
+[class~="bg-white-3:focus"]:focus,
+[class~="bg-white-3:active"]:active,
+[class~="bg-white-3:selection"]::selection,
+[class~="bg-white-3::hover"] > *:hover,
+[class~="bg-white-3::focus"] > *:focus,
+[class~="bg-white-3::active"] > *:active,
+[class~="bg-white-3::selection"] > *::selection, [class~="bg-white-3::"] > * {
+  background-color: var(--white-3);
+}
+
+.br-white-3__ {
+  content: "";
+}
+
+.br-white-3, [class~="br-white-3:hover"]:hover,
+[class~="br-white-3:focus"]:focus,
+[class~="br-white-3:active"]:active,
+[class~="br-white-3:selection"]::selection,
+[class~="br-white-3::hover"] > *:hover,
+[class~="br-white-3::focus"] > *:focus,
+[class~="br-white-3::active"] > *:active,
+[class~="br-white-3::selection"] > *::selection, [class~="br-white-3::"] > * {
+  border-color: var(--white-3);
+}
+
+.white-4__ {
+  content: "";
+}
+
+.white-4, [class~="white-4:hover"]:hover,
+[class~="white-4:focus"]:focus,
+[class~="white-4:active"]:active,
+[class~="white-4:selection"]::selection,
+[class~="white-4::hover"] > *:hover,
+[class~="white-4::focus"] > *:focus,
+[class~="white-4::active"] > *:active,
+[class~="white-4::selection"] > *::selection, [class~="white-4::"] > * {
+  color: var(--white-4);
+}
+
+.bg-white-4__ {
+  content: "";
+}
+
+.bg-white-4, [class~="bg-white-4:hover"]:hover,
+[class~="bg-white-4:focus"]:focus,
+[class~="bg-white-4:active"]:active,
+[class~="bg-white-4:selection"]::selection,
+[class~="bg-white-4::hover"] > *:hover,
+[class~="bg-white-4::focus"] > *:focus,
+[class~="bg-white-4::active"] > *:active,
+[class~="bg-white-4::selection"] > *::selection, [class~="bg-white-4::"] > * {
+  background-color: var(--white-4);
+}
+
+.br-white-4__ {
+  content: "";
+}
+
+.br-white-4, [class~="br-white-4:hover"]:hover,
+[class~="br-white-4:focus"]:focus,
+[class~="br-white-4:active"]:active,
+[class~="br-white-4:selection"]::selection,
+[class~="br-white-4::hover"] > *:hover,
+[class~="br-white-4::focus"] > *:focus,
+[class~="br-white-4::active"] > *:active,
+[class~="br-white-4::selection"] > *::selection, [class~="br-white-4::"] > * {
+  border-color: var(--white-4);
+}
+
+.white-5__ {
+  content: "";
+}
+
+.white-5, [class~="white-5:hover"]:hover,
+[class~="white-5:focus"]:focus,
+[class~="white-5:active"]:active,
+[class~="white-5:selection"]::selection,
+[class~="white-5::hover"] > *:hover,
+[class~="white-5::focus"] > *:focus,
+[class~="white-5::active"] > *:active,
+[class~="white-5::selection"] > *::selection, [class~="white-5::"] > * {
+  color: var(--white-5);
+}
+
+.bg-white-5__ {
+  content: "";
+}
+
+.bg-white-5, [class~="bg-white-5:hover"]:hover,
+[class~="bg-white-5:focus"]:focus,
+[class~="bg-white-5:active"]:active,
+[class~="bg-white-5:selection"]::selection,
+[class~="bg-white-5::hover"] > *:hover,
+[class~="bg-white-5::focus"] > *:focus,
+[class~="bg-white-5::active"] > *:active,
+[class~="bg-white-5::selection"] > *::selection, [class~="bg-white-5::"] > * {
+  background-color: var(--white-5);
+}
+
+.br-white-5__ {
+  content: "";
+}
+
+.br-white-5, [class~="br-white-5:hover"]:hover,
+[class~="br-white-5:focus"]:focus,
+[class~="br-white-5:active"]:active,
+[class~="br-white-5:selection"]::selection,
+[class~="br-white-5::hover"] > *:hover,
+[class~="br-white-5::focus"] > *:focus,
+[class~="br-white-5::active"] > *:active,
+[class~="br-white-5::selection"] > *::selection, [class~="br-white-5::"] > * {
+  border-color: var(--white-5);
+}
+
+.white-6__ {
+  content: "";
+}
+
+.white-6, [class~="white-6:hover"]:hover,
+[class~="white-6:focus"]:focus,
+[class~="white-6:active"]:active,
+[class~="white-6:selection"]::selection,
+[class~="white-6::hover"] > *:hover,
+[class~="white-6::focus"] > *:focus,
+[class~="white-6::active"] > *:active,
+[class~="white-6::selection"] > *::selection, [class~="white-6::"] > * {
+  color: var(--white-6);
+}
+
+.bg-white-6__ {
+  content: "";
+}
+
+.bg-white-6, [class~="bg-white-6:hover"]:hover,
+[class~="bg-white-6:focus"]:focus,
+[class~="bg-white-6:active"]:active,
+[class~="bg-white-6:selection"]::selection,
+[class~="bg-white-6::hover"] > *:hover,
+[class~="bg-white-6::focus"] > *:focus,
+[class~="bg-white-6::active"] > *:active,
+[class~="bg-white-6::selection"] > *::selection, [class~="bg-white-6::"] > * {
+  background-color: var(--white-6);
+}
+
+.br-white-6__ {
+  content: "";
+}
+
+.br-white-6, [class~="br-white-6:hover"]:hover,
+[class~="br-white-6:focus"]:focus,
+[class~="br-white-6:active"]:active,
+[class~="br-white-6:selection"]::selection,
+[class~="br-white-6::hover"] > *:hover,
+[class~="br-white-6::focus"] > *:focus,
+[class~="br-white-6::active"] > *:active,
+[class~="br-white-6::selection"] > *::selection, [class~="br-white-6::"] > * {
+  border-color: var(--white-6);
+}
+
+.black__ {
+  content: "";
+}
+
+.black, [class~="black:hover"]:hover,
+[class~="black:focus"]:focus,
+[class~="black:active"]:active,
+[class~="black:selection"]::selection,
+[class~="black::hover"] > *:hover,
+[class~="black::focus"] > *:focus,
+[class~="black::active"] > *:active,
+[class~="black::selection"] > *::selection, [class~="black::"] > * {
+  color: var(--black);
+}
+
+.bg-black__ {
+  content: "";
+}
+
+.bg-black, [class~="bg-black:hover"]:hover,
+[class~="bg-black:focus"]:focus,
+[class~="bg-black:active"]:active,
+[class~="bg-black:selection"]::selection,
+[class~="bg-black::hover"] > *:hover,
+[class~="bg-black::focus"] > *:focus,
+[class~="bg-black::active"] > *:active,
+[class~="bg-black::selection"] > *::selection, [class~="bg-black::"] > * {
+  background-color: var(--black);
+}
+
+.br-black__ {
+  content: "";
+}
+
+.br-black, [class~="br-black:hover"]:hover,
+[class~="br-black:focus"]:focus,
+[class~="br-black:active"]:active,
+[class~="br-black:selection"]::selection,
+[class~="br-black::hover"] > *:hover,
+[class~="br-black::focus"] > *:focus,
+[class~="br-black::active"] > *:active,
+[class~="br-black::selection"] > *::selection, [class~="br-black::"] > * {
+  border-color: var(--black);
+}
+
+.black-1__ {
+  content: "";
+}
+
+.black-1, [class~="black-1:hover"]:hover,
+[class~="black-1:focus"]:focus,
+[class~="black-1:active"]:active,
+[class~="black-1:selection"]::selection,
+[class~="black-1::hover"] > *:hover,
+[class~="black-1::focus"] > *:focus,
+[class~="black-1::active"] > *:active,
+[class~="black-1::selection"] > *::selection, [class~="black-1::"] > * {
+  color: var(--black-1);
+}
+
+.bg-black-1__ {
+  content: "";
+}
+
+.bg-black-1, [class~="bg-black-1:hover"]:hover,
+[class~="bg-black-1:focus"]:focus,
+[class~="bg-black-1:active"]:active,
+[class~="bg-black-1:selection"]::selection,
+[class~="bg-black-1::hover"] > *:hover,
+[class~="bg-black-1::focus"] > *:focus,
+[class~="bg-black-1::active"] > *:active,
+[class~="bg-black-1::selection"] > *::selection, [class~="bg-black-1::"] > * {
+  background-color: var(--black-1);
+}
+
+.br-black-1__ {
+  content: "";
+}
+
+.br-black-1, [class~="br-black-1:hover"]:hover,
+[class~="br-black-1:focus"]:focus,
+[class~="br-black-1:active"]:active,
+[class~="br-black-1:selection"]::selection,
+[class~="br-black-1::hover"] > *:hover,
+[class~="br-black-1::focus"] > *:focus,
+[class~="br-black-1::active"] > *:active,
+[class~="br-black-1::selection"] > *::selection, [class~="br-black-1::"] > * {
+  border-color: var(--black-1);
+}
+
+.black-2__ {
+  content: "";
+}
+
+.black-2, [class~="black-2:hover"]:hover,
+[class~="black-2:focus"]:focus,
+[class~="black-2:active"]:active,
+[class~="black-2:selection"]::selection,
+[class~="black-2::hover"] > *:hover,
+[class~="black-2::focus"] > *:focus,
+[class~="black-2::active"] > *:active,
+[class~="black-2::selection"] > *::selection, [class~="black-2::"] > * {
+  color: var(--black-2);
+}
+
+.bg-black-2__ {
+  content: "";
+}
+
+.bg-black-2, [class~="bg-black-2:hover"]:hover,
+[class~="bg-black-2:focus"]:focus,
+[class~="bg-black-2:active"]:active,
+[class~="bg-black-2:selection"]::selection,
+[class~="bg-black-2::hover"] > *:hover,
+[class~="bg-black-2::focus"] > *:focus,
+[class~="bg-black-2::active"] > *:active,
+[class~="bg-black-2::selection"] > *::selection, [class~="bg-black-2::"] > * {
+  background-color: var(--black-2);
+}
+
+.br-black-2__ {
+  content: "";
+}
+
+.br-black-2, [class~="br-black-2:hover"]:hover,
+[class~="br-black-2:focus"]:focus,
+[class~="br-black-2:active"]:active,
+[class~="br-black-2:selection"]::selection,
+[class~="br-black-2::hover"] > *:hover,
+[class~="br-black-2::focus"] > *:focus,
+[class~="br-black-2::active"] > *:active,
+[class~="br-black-2::selection"] > *::selection, [class~="br-black-2::"] > * {
+  border-color: var(--black-2);
+}
+
+.black-3__ {
+  content: "";
+}
+
+.black-3, [class~="black-3:hover"]:hover,
+[class~="black-3:focus"]:focus,
+[class~="black-3:active"]:active,
+[class~="black-3:selection"]::selection,
+[class~="black-3::hover"] > *:hover,
+[class~="black-3::focus"] > *:focus,
+[class~="black-3::active"] > *:active,
+[class~="black-3::selection"] > *::selection, [class~="black-3::"] > * {
+  color: var(--black-3);
+}
+
+.bg-black-3__ {
+  content: "";
+}
+
+.bg-black-3, [class~="bg-black-3:hover"]:hover,
+[class~="bg-black-3:focus"]:focus,
+[class~="bg-black-3:active"]:active,
+[class~="bg-black-3:selection"]::selection,
+[class~="bg-black-3::hover"] > *:hover,
+[class~="bg-black-3::focus"] > *:focus,
+[class~="bg-black-3::active"] > *:active,
+[class~="bg-black-3::selection"] > *::selection, [class~="bg-black-3::"] > * {
+  background-color: var(--black-3);
+}
+
+.br-black-3__ {
+  content: "";
+}
+
+.br-black-3, [class~="br-black-3:hover"]:hover,
+[class~="br-black-3:focus"]:focus,
+[class~="br-black-3:active"]:active,
+[class~="br-black-3:selection"]::selection,
+[class~="br-black-3::hover"] > *:hover,
+[class~="br-black-3::focus"] > *:focus,
+[class~="br-black-3::active"] > *:active,
+[class~="br-black-3::selection"] > *::selection, [class~="br-black-3::"] > * {
+  border-color: var(--black-3);
+}
+
+.black-4__ {
+  content: "";
+}
+
+.black-4, [class~="black-4:hover"]:hover,
+[class~="black-4:focus"]:focus,
+[class~="black-4:active"]:active,
+[class~="black-4:selection"]::selection,
+[class~="black-4::hover"] > *:hover,
+[class~="black-4::focus"] > *:focus,
+[class~="black-4::active"] > *:active,
+[class~="black-4::selection"] > *::selection, [class~="black-4::"] > * {
+  color: var(--black-4);
+}
+
+.bg-black-4__ {
+  content: "";
+}
+
+.bg-black-4, [class~="bg-black-4:hover"]:hover,
+[class~="bg-black-4:focus"]:focus,
+[class~="bg-black-4:active"]:active,
+[class~="bg-black-4:selection"]::selection,
+[class~="bg-black-4::hover"] > *:hover,
+[class~="bg-black-4::focus"] > *:focus,
+[class~="bg-black-4::active"] > *:active,
+[class~="bg-black-4::selection"] > *::selection, [class~="bg-black-4::"] > * {
+  background-color: var(--black-4);
+}
+
+.br-black-4__ {
+  content: "";
+}
+
+.br-black-4, [class~="br-black-4:hover"]:hover,
+[class~="br-black-4:focus"]:focus,
+[class~="br-black-4:active"]:active,
+[class~="br-black-4:selection"]::selection,
+[class~="br-black-4::hover"] > *:hover,
+[class~="br-black-4::focus"] > *:focus,
+[class~="br-black-4::active"] > *:active,
+[class~="br-black-4::selection"] > *::selection, [class~="br-black-4::"] > * {
+  border-color: var(--black-4);
+}
+
+.black-5__ {
+  content: "";
+}
+
+.black-5, [class~="black-5:hover"]:hover,
+[class~="black-5:focus"]:focus,
+[class~="black-5:active"]:active,
+[class~="black-5:selection"]::selection,
+[class~="black-5::hover"] > *:hover,
+[class~="black-5::focus"] > *:focus,
+[class~="black-5::active"] > *:active,
+[class~="black-5::selection"] > *::selection, [class~="black-5::"] > * {
+  color: var(--black-5);
+}
+
+.bg-black-5__ {
+  content: "";
+}
+
+.bg-black-5, [class~="bg-black-5:hover"]:hover,
+[class~="bg-black-5:focus"]:focus,
+[class~="bg-black-5:active"]:active,
+[class~="bg-black-5:selection"]::selection,
+[class~="bg-black-5::hover"] > *:hover,
+[class~="bg-black-5::focus"] > *:focus,
+[class~="bg-black-5::active"] > *:active,
+[class~="bg-black-5::selection"] > *::selection, [class~="bg-black-5::"] > * {
+  background-color: var(--black-5);
+}
+
+.br-black-5__ {
+  content: "";
+}
+
+.br-black-5, [class~="br-black-5:hover"]:hover,
+[class~="br-black-5:focus"]:focus,
+[class~="br-black-5:active"]:active,
+[class~="br-black-5:selection"]::selection,
+[class~="br-black-5::hover"] > *:hover,
+[class~="br-black-5::focus"] > *:focus,
+[class~="br-black-5::active"] > *:active,
+[class~="br-black-5::selection"] > *::selection, [class~="br-black-5::"] > * {
+  border-color: var(--black-5);
+}
+
+.black-6__ {
+  content: "";
+}
+
+.black-6, [class~="black-6:hover"]:hover,
+[class~="black-6:focus"]:focus,
+[class~="black-6:active"]:active,
+[class~="black-6:selection"]::selection,
+[class~="black-6::hover"] > *:hover,
+[class~="black-6::focus"] > *:focus,
+[class~="black-6::active"] > *:active,
+[class~="black-6::selection"] > *::selection, [class~="black-6::"] > * {
+  color: var(--black-6);
+}
+
+.bg-black-6__ {
+  content: "";
+}
+
+.bg-black-6, [class~="bg-black-6:hover"]:hover,
+[class~="bg-black-6:focus"]:focus,
+[class~="bg-black-6:active"]:active,
+[class~="bg-black-6:selection"]::selection,
+[class~="bg-black-6::hover"] > *:hover,
+[class~="bg-black-6::focus"] > *:focus,
+[class~="bg-black-6::active"] > *:active,
+[class~="bg-black-6::selection"] > *::selection, [class~="bg-black-6::"] > * {
+  background-color: var(--black-6);
+}
+
+.br-black-6__ {
+  content: "";
+}
+
+.br-black-6, [class~="br-black-6:hover"]:hover,
+[class~="br-black-6:focus"]:focus,
+[class~="br-black-6:active"]:active,
+[class~="br-black-6:selection"]::selection,
+[class~="br-black-6::hover"] > *:hover,
+[class~="br-black-6::focus"] > *:focus,
+[class~="br-black-6::active"] > *:active,
+[class~="br-black-6::selection"] > *::selection, [class~="br-black-6::"] > * {
+  border-color: var(--black-6);
+}/*# sourceMappingURL=style.css.map */

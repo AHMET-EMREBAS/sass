@@ -1,4 +1,6 @@
 @use "color" as color;
+@forward "input";
+
 
 @mixin createColorClasses() {
   @include color.class(primary);

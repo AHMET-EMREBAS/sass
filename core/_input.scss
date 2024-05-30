@@ -1,0 +1,27 @@
+:root {
+  --input-radius: 0.5em;
+  --input-border-width: 0.3em;
+  --input-padding-x: 1em;
+  --input-padding-y: 0.5em;
+  --input-border-style: solid;
+  --input-min-width: 12em;
+}
+
+input {
+  border-radius: var(--input-radius, 0.5em);
+  border-width: var(--input-border-width, 0.3em);
+  padding-left: var(--input-padding-x, 2em);
+  padding-right: var(--input-padding-x, 2em);
+  padding-top: var(--input-padding-y, 0.5em);
+  padding-bottom: var(--input-padding-y, 0.5em);
+  border-style: var(--input-border-style, solid);
+  min-width: var(--input-min-width);
+  color: var(--black-6);
+  border-color: var(--primary-6);
+}
+
+input:active,
+input:focus {
+  outline: none !important;
+  border-color: var(--primary-4);
+}
