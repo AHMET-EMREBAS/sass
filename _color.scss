@@ -1,0 +1,57 @@
+@use "action" as action;
+
+$__colorLimit: 30;
+$__builtin: (
+  error: rgb(205, 0, 41),
+  success: rgb(0, 198, 0),
+  info: rgb(0, 210, 210),
+  warning: orange,
+);
+
+@mixin root($n, $v) {
+  --#{$n}: #{$v};
+
+  @for $i from 1 through 3 {
+    --#{$n}-#{$i}: #{darken($v, $__colorLimit / $i * 1%)};
+    --#{$n}-#{$i+3}: #{lighten($v, $i * $__colorLimit / 3 * 1%)};
+  }
+}
+
+@mixin class($cn) {
+  .#{$cn} {
+    color: var(--#{$cn});
+  }
+
+  @include action.create($cn);
+
+  .bg-#{$cn} {
+    background-color: var(--#{$cn});
+  }
+  @include action.create(bg-#{$cn});
+
+  @for $i from 1 through 6 {
+    $ccn: #{$cn}-#{$i};
+    @include action.create($ccn);
+
+    .#{$ccn} {
+      color: var(--#{$ccn});
+    }
+
+    @include action.create(bg-#{$ccn});
+    .bg-#{$ccn} {
+      background-color: var(--#{$ccn});
+    }
+  }
+}
+
+@mixin builtinRoot() {
+  @each $k, $v in $__builtin {
+    @include root($k, $v);
+  }
+}
+
+@mixin builtinClass() {
+  @each $k, $v in $__builtin {
+    @include class($k);
+  }
+}

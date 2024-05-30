@@ -1,0 +1,12 @@
+$_justify: (
+  flex-start,
+  flex-end,
+  space-around,
+  space-between,
+  space-evenly,
+  stretch
+);
+
+.flex {
+  display: flex;
+}

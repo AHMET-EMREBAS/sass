@@ -1,0 +1,3 @@
+@use "index" as core;
+
+@include core.createColors(royalblue, pink, orangered);

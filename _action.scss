@@ -1,0 +1,7 @@
+@mixin create($cn) {
+  [class~="#{$cn}:hover"]:hover,
+  [class~="#{$cn}:focus"]:focus,
+  [class~="#{$cn}:active"]:active {
+    @extend .#{$cn};
+  }
+}
