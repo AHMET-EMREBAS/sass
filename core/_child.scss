@@ -1,4 +1,8 @@
 @mixin create($cn) {
+  .#{$cn}__ {
+    content: "";
+  }
+
   [class~="#{$cn}::"] > * {
     @extend .#{$cn};
   }
