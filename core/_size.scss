@@ -1,49 +1,56 @@
 @use "_media" as media;
+@use "_pesudo" as pesudo;
 
 // Percent %
 @for $i from 0 through 12 {
   $cn: "w-" + $i;
   $value: #{$i * 8%};
 
-  .#{$cn} {
-    width: #{$value};
-  }
+  @include pesudo.create($cn);
+
   @include media.createMediaClasses(
     $cn,
     (
       width: #{$value},
     )
   );
+
+  .#{$cn} {
+    width: #{$value};
+  }
 }
 // VW
 @for $i from 0 through 12 {
   $cn: "vw-" + $i;
   $value: #{$i * 8vw};
 
-  .#{$cn} {
-    width: #{$value};
-  }
+  @include pesudo.create($cn);
   @include media.createMediaClasses(
     $cn,
     (
       width: #{$value},
     )
   );
+  .#{$cn} {
+    width: #{$value};
+  }
 }
 // VH
 @for $i from 0 through 12 {
   $cn: "vh-" + $i;
   $value: #{$i * 8vw};
 
-  .#{$cn} {
-    height: #{$value};
-  }
+  @include pesudo.create($cn);
+
   @include media.createMediaClasses(
     $cn,
     (
       height: #{$value},
     )
   );
+  .#{$cn} {
+    height: #{$value};
+  }
 }
 
 // Pixel W
@@ -51,34 +58,175 @@
   $cn: "w-" + $i + "x";
   $value: #{$i * 32px};
 
-  .#{$cn} {
-    width: #{$value};
-  }
+  @include pesudo.create($cn);
   @include media.createMediaClasses(
     $cn,
     (
       width: #{$value},
     )
   );
+  .#{$cn} {
+    width: #{$value};
+  }
 }
 
 // Pixel H
 @for $i from 0 through 12 {
-  $cn: "h-" + $i + "x";
+  $cn: "h-#{$i}x";
   $value: #{$i * 32px};
 
-  .#{$cn} {
-    height: #{$value};
-  }
+  @include pesudo.create($cn);
+
   @include media.createMediaClasses(
     $cn,
     (
       height: #{$value},
     )
   );
+  .#{$cn} {
+    height: #{$value};
+  }
 
+  @include media.createMediaClasses(
+    "square-#{$i}",
+    (
+      width: #{$value},
+      height: #{$value},
+    )
+  );
+
+  @include pesudo.create("square-#{$i}");
   .square-#{$i} {
     width: #{$value};
     height: #{$value};
+  }
+}
+
+// Border Width
+@for $i from 0 through 12 {
+  $cn: "bw-" + $i + "x";
+  $value: #{$i * 1px};
+
+  @include pesudo.create($cn);
+  @include media.createMediaClasses(
+    $cn,
+    (
+      border-width: #{$value},
+    )
+  );
+
+  .#{$cn} {
+    border-width: #{$value};
+  }
+}
+
+// Margin padding
+@for $i from 0 through 12 {
+  $_sides: (
+    t: top,
+    r: right,
+    l: left,
+    b: bottom,
+  );
+
+  @include pesudo.create("m-#{$i}");
+  @include media.createMediaClasses(
+    "m-#{$i}",
+    (
+      margin: #{$i}px,
+    )
+  );
+  .m-#{$i} {
+    margin: #{$i}px;
+  }
+
+  @include pesudo.create("m-#{$i}em");
+  @include media.createMediaClasses(
+    "m-#{$i}em",
+    (
+      margin: #{$i}em,
+    )
+  );
+  .m-#{$i}em {
+    margin: #{$i}em;
+  }
+
+  @include pesudo.create("p-#{$i}");
+  @include media.createMediaClasses(
+    "p-#{$i}",
+    (
+      padding: #{$i}px,
+    )
+  );
+  .p-#{$i} {
+    padding: #{$i}px;
+  }
+
+  @include pesudo.create("p-#{$i}em");
+  @include media.createMediaClasses(
+    "p-#{$i}em",
+    (
+      padding: #{$i}em,
+    )
+  );
+  .p-#{$i}em {
+    padding: #{$i}em;
+  }
+
+  @each $k, $v in $_sides {
+    @include pesudo.create("m#{$k}-#{$i}");
+    @include media.createMediaClasses("m#{$k}-#{$i}", (margin-#{$v}: #{$i}px));
+    .m#{$k}-#{$i} {
+      margin-#{$v}: #{$i}px;
+    }
+
+    @include pesudo.create("m#{$k}-#{$i}em");
+    @include media.createMediaClasses(
+      "m#{$k}-#{$i}em",
+      (margin-#{$v}: #{$i}em)
+    );
+    .m#{$k}-#{$i}em {
+      margin-#{$v}: #{$i}em;
+    }
+
+    @include pesudo.create("p#{$k}-#{$i}");
+    @include media.createMediaClasses("p#{$k}-#{$i}", (padding-#{$v}: #{$i}px));
+    .p#{$k}-#{$i} {
+      padding-#{$v}: #{$i}px;
+    }
+
+    @include pesudo.create("p#{$k}-#{$i}em");
+    @include media.createMediaClasses(
+      "p#{$k}-#{$i}em",
+      (padding-#{$v}: #{$i}em)
+    );
+    .p#{$k}-#{$i}em {
+      padding-#{$v}: #{$i}em;
+    }
+  }
+}
+
+// Fontsize
+@for $i from 0 through 12 {
+  @include pesudo.create("fs-#{$i}");
+  @include media.createMediaClasses(
+    "fs-#{$i}",
+    (
+      font-size: #{$i * 0.3em},
+    )
+  );
+  .fs-#{$i} {
+    font-size: #{$i * 0.3em};
+  }
+
+  @include pesudo.create("ls-#{$i}");
+  @include media.createMediaClasses(
+    "ls-#{$i}",
+    (
+      letter-spacing: #{$i * 0.1em},
+    )
+  );
+  .ls-#{$i} {
+    letter-spacing: #{$i * 0.1em};
   }
 }

@@ -43,7 +43,7 @@ $__builtin: (
 
   // Border side colors
   @each $k, $v in (t: top, l: left, r: right, b: bottom) {
-    @include pesudo.create(br#{$k}-#{$cn});
+    @include pesudo.create("br#{$k}-#{$cn}");
     .br#{$k}-#{$cn} {
       border-#{$v}-color: var(--#{$cn}) !important;
     }

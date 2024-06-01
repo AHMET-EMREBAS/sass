@@ -35,3 +35,39 @@
     @extend .#{$cn};
   }
 }
+
+@mixin createForMedia($cn, $ms, $props) {
+  [class~="#{$ms}:#{$cn}:hover"]:hover,
+  [class~="#{$ms}:#{$cn}:focus"]:focus,
+  [class~="#{$ms}:#{$cn}:active"]:active,
+  [class~="#{$ms}:#{$cn}:selection"]::selection,
+  [class~="#{$ms}:#{$cn}:first"]:first-child,
+  [class~="#{$ms}:#{$cn}:last"]:last-child,
+  [class~="#{$ms}:#{$cn}:even"]:nth-child(even),
+  [class~="#{$ms}:#{$cn}:odd"]:nth-child(odd),
+  [class~="#{$ms}:#{$cn}::"] > *,
+  [class~="#{$ms}:#{$cn}::hover"] > *:hover,
+  [class~="#{$ms}:#{$cn}::focus"] > *:focus,
+  [class~="#{$ms}:#{$cn}::active"] > *:active,
+  [class~="#{$ms}:#{$cn}::selection"] > *::selection,
+  [class~="#{$ms}:#{$cn}::even"] > *:nth-child(even),
+  [class~="#{$ms}:#{$cn}::odd"] > *:nth-child(odd),
+  [class~="#{$ms}:#{$cn}::first"] > *:first-child,
+  [class~="#{$ms}:#{$cn}::last"] > *:last-child,
+  [class~="#{$ms}:#{$cn}::odd:hover"] > *:nth-child(odd):hover,
+  [class~="#{$ms}:#{$cn}::odd:focus"] > *:nth-child(odd):focus,
+  [class~="#{$ms}:#{$cn}::odd:active"] > *:nth-child(odd):active,
+  [class~="#{$ms}:#{$cn}::even:hover"] > *:nth-child(even):hover,
+  [class~="#{$ms}:#{$cn}::even:focus"] > *:nth-child(even):focus,
+  [class~="#{$ms}:#{$cn}::even:active"] > *:nth-child(even):active,
+  [class~="#{$ms}:#{$cn}::first:hover"] > *:first-child:hover,
+  [class~="#{$ms}:#{$cn}::first:focus"] > *:first-child:focus,
+  [class~="#{$ms}:#{$cn}::first:active"] > *:first-child:active,
+  [class~="#{$ms}:#{$cn}::last:hover"] > *:last-child:hover,
+  [class~="#{$ms}:#{$cn}::last:focus"] > *:last-child:focus,
+  [class~="#{$ms}:#{$cn}::last:active"] > *:last-child:active {
+    @each $k, $v in $props {
+      #{$k}: #{$v};
+    }
+  }
+}

@@ -1,0 +1,8 @@
+@use "_pesudo" as pesudo;
+
+@each $i in (dashed, dotted, double, solid, groove) {
+  .bs-#{$i} {
+    border-style: #{$i};
+  }
+  @include pesudo.create(bs-#{$i});
+}

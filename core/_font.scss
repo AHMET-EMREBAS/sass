@@ -1,0 +1,11 @@
+@use "_pesudo" as pesudo;
+
+@include pesudo.create(bold);
+.bold {
+  font-weight: bold;
+}
+
+@include pesudo.create(bolder);
+.bolder {
+  font-weight: bolder;
+}

@@ -1,3 +1,4 @@
+@use "_pesudo" as pesudo;
 $__medias: (
   xs: "max-width: 575px",
   mxs: "min-width: 575px",
@@ -21,14 +22,15 @@ $__medias: (
   lxxl: "max-width: 1400px",
 );
 
-@mixin createMediaClasses($cn, $properties) {
-  @each $mn, $con in $__medias {
+@mixin createMediaClasses($cn, $props) {
+  @each $ms, $con in $__medias {
     @media screen and (#{$con}) {
-      [class~="#{$mn}:#{$cn}"] {
-        @each $k, $v in $properties {
+      [class~="#{$ms}:#{$cn}"] {
+        @each $k, $v in $props {
           #{$k}: #{$v};
         }
       }
+      @include pesudo.createForMedia($cn, $ms, $props);
     }
   }
 }

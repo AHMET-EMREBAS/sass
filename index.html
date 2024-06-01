@@ -4,17 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flexbox</title>
-    <link rel="stylesheet" href="./style.css" />
+
+    <style>
+      html,
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+      }
+
+      * {
+        box-sizing: border-box;
+        border-color: transparent;
+        border-width: 3px;
+        border-style: solid;
+      }
+    </style>
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
+    <link rel="stylesheet" href="./mini.css" />
 
     <style></style>
   </head>
   <body>
-    <div
-      class="row lsm:col start vh-12"
-      style="justify-content: flex-start; border: 1px solid red"
-    >
-      <div class="br-primary">
-        <h1>Hello</h1>
+    <div class="row lsm:col start vh-12" style="justify-content: flex-start">
+      <div
+        class="row br-primary col:: center:: a-center:: square-1:: p-1em ml-1em:: ml-0::first cursor-pointer:: bold:: br-warn::even br-primary::odd msm:fs-5:: error::hover brl-error-3::hover"
+      >
+        <button>
+          <span>XS</span>
+        </button>
+        <button>
+          <span>S</span>
+        </button>
+        <button>
+          <span>M</span>
+        </button>
+        <button>
+          <span>X</span>
+        </button>
+        <button>
+          <span>XL</span>
+        </button>
+        <button>
+          <span>2XL</span>
+        </button>
       </div>
       <div class="br-primary">
         <h1>Hello</h1>
@@ -24,4 +60,6 @@
       </div>
     </div>
   </body>
+
+  <script src="./optimize.js"></script>
 </html>
