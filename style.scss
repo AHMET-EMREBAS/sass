@@ -2,3 +2,9 @@
 
 @include core.createColorRoot(royalblue, pink, orange);
 @include core.createColorClasses();
+
+* {
+  border-color: transparent;
+  border-width: 3px;
+  border-style: solid;
+}

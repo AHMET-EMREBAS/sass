@@ -182,8 +182,6 @@ input:focus {
 [class~="br-primary::last:focus"] > *:last-child:focus,
 [class~="br-primary::last:active"] > *:last-child:active, [class~="br-primary::"] > * {
   border-color: var(--primary);
-  border-width: 0.1em;
-  border-style: solid;
 }
 
 .primary-1_ {
@@ -856,8 +854,6 @@ input:focus {
 [class~="br-accent::last:focus"] > *:last-child:focus,
 [class~="br-accent::last:active"] > *:last-child:active, [class~="br-accent::"] > * {
   border-color: var(--accent);
-  border-width: 0.1em;
-  border-style: solid;
 }
 
 .accent-1_ {
@@ -1530,8 +1526,6 @@ input:focus {
 [class~="br-warn::last:focus"] > *:last-child:focus,
 [class~="br-warn::last:active"] > *:last-child:active, [class~="br-warn::"] > * {
   border-color: var(--warn);
-  border-width: 0.1em;
-  border-style: solid;
 }
 
 .warn-1_ {
@@ -2204,8 +2198,6 @@ input:focus {
 [class~="br-error::last:focus"] > *:last-child:focus,
 [class~="br-error::last:active"] > *:last-child:active, [class~="br-error::"] > * {
   border-color: var(--error);
-  border-width: 0.1em;
-  border-style: solid;
 }
 
 .error-1_ {
@@ -2878,8 +2870,6 @@ input:focus {
 [class~="br-success::last:focus"] > *:last-child:focus,
 [class~="br-success::last:active"] > *:last-child:active, [class~="br-success::"] > * {
   border-color: var(--success);
-  border-width: 0.1em;
-  border-style: solid;
 }
 
 .success-1_ {
@@ -3552,8 +3542,6 @@ input:focus {
 [class~="br-info::last:focus"] > *:last-child:focus,
 [class~="br-info::last:active"] > *:last-child:active, [class~="br-info::"] > * {
   border-color: var(--info);
-  border-width: 0.1em;
-  border-style: solid;
 }
 
 .info-1_ {
@@ -4226,8 +4214,6 @@ input:focus {
 [class~="br-warning::last:focus"] > *:last-child:focus,
 [class~="br-warning::last:active"] > *:last-child:active, [class~="br-warning::"] > * {
   border-color: var(--warning);
-  border-width: 0.1em;
-  border-style: solid;
 }
 
 .warning-1_ {
@@ -4900,8 +4886,6 @@ input:focus {
 [class~="br-white::last:focus"] > *:last-child:focus,
 [class~="br-white::last:active"] > *:last-child:active, [class~="br-white::"] > * {
   border-color: var(--white);
-  border-width: 0.1em;
-  border-style: solid;
 }
 
 .white-1_ {
@@ -5574,8 +5558,6 @@ input:focus {
 [class~="br-black::last:focus"] > *:last-child:focus,
 [class~="br-black::last:active"] > *:last-child:active, [class~="br-black::"] > * {
   border-color: var(--black);
-  border-width: 0.1em;
-  border-style: solid;
 }
 
 .black-1_ {
@@ -6152,4 +6134,10 @@ input:focus {
 [class~="br-black-6::last:focus"] > *:last-child:focus,
 [class~="br-black-6::last:active"] > *:last-child:active, [class~="br-black-6::"] > * {
   border-color: var(--black-6);
+}
+
+* {
+  border-color: transparent;
+  border-width: 3px;
+  border-style: solid;
 }/*# sourceMappingURL=style.css.map */
