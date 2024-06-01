@@ -45,3 +45,5 @@
 - [?] Create image classes
 
 - [?] Create icon classes
+
+- [!IMPORTATN] Create root variables for each size
