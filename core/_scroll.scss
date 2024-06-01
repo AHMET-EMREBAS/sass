@@ -1,0 +1,33 @@
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-3);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-3);
+}
+/* Style the scrollbar thumb when it's in an active state (e.g., when scrolling) */
+::-webkit-scrollbar-thumb:active {
+  background: var(--primary-3);
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--primary-6);
+}
+
+::-webkit-scrollbar-track:active {
+  background-color: var(--primary-6);
+}
+::-webkit-scrollbar-track:hover {
+  background-color: var(--primary-6);
+}
+
+/* Style the scrollbar corner (the intersection between the horizontal and vertical scrollbars) */
+::-webkit-scrollbar-corner {
+  background: var(--primary-3);
+}

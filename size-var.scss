@@ -1,0 +1,9 @@
+@mixin sizes() {
+  @for $i from 0 through 12 {
+    --m-#{$i}: #{$i * 8%};
+  }
+}
+
+:root {
+  @include sizes();
+}
