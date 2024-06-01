@@ -10,3 +10,20 @@ $_justify: (
 .flex {
   display: flex;
 }
+
+.row {
+  @extend .flex;
+  flex-direction: row;
+}
+
+.col {
+  @extend .flex;
+  flex-direction: column;
+}
+
+.container {
+  @extend .row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
