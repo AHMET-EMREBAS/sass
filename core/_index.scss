@@ -1,20 +1,4 @@
-@use "color" as color;
+@forward "color";
 @forward "input";
 @forward "flex";
-
-
-@mixin createColorClasses() {
-  @include color.class(primary);
-  @include color.class(accent);
-  @include color.class(warn);
-  @include color.builtinClass();
-}
-
-@mixin createColorRoot($primary, $accent, $warn) {
-  :root {
-    @include color.root(primary, $primary);
-    @include color.root(accent, $accent);
-    @include color.root(warn, $warn);
-    @include color.builtinRoot();
-  }
-}
+@forward "size";

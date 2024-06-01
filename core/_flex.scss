@@ -1,10 +1,12 @@
+@use "_media" as media;
+
 $_justify: (
-  flex-start,
-  flex-end,
-  space-around,
-  space-between,
-  space-evenly,
-  stretch
+  start: flex-start,
+  end: flex-end,
+  around: space-around,
+  between: space-between,
+  evenly: space-evenly,
+  stretch: stretch,
 );
 
 .flex {
@@ -16,14 +18,41 @@ $_justify: (
   flex-direction: row;
 }
 
+@include media.createMediaClasses(
+  "row",
+  (
+    flex-direction: row,
+  )
+);
+
 .col {
   @extend .flex;
   flex-direction: column;
 }
+
+@include media.createMediaClasses(
+  "col",
+  (
+    flex-direction: column,
+  )
+);
 
 .container {
   @extend .row;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
+}
+
+@each $k, $v in $_justify {
+  .#{$k} {
+    justify-content: #{$v};
+  }
+
+  @include media.createMediaClasses(
+    $k,
+    (
+      justify-content: $v,
+    )
+  );
 }

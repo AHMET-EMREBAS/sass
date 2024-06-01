@@ -1,5 +1,4 @@
-@use "action" as action;
-@use "child" as child;
+@use "_pesudo" as pesudo;
 
 $__colorLimit: 30;
 $__builtin: (
@@ -11,7 +10,7 @@ $__builtin: (
   black: rgb(59, 59, 59),
 );
 
-@mixin root($n, $v) {
+@mixin __root($n, $v) {
   --#{$n}: #{$v};
 
   @for $i from 1 through 3 {
@@ -20,56 +19,62 @@ $__builtin: (
   }
 }
 
-@mixin class($cn) {
+@mixin __class($cn) {
   // Color
-  @include action.create($cn);
-  @include child.create($cn);
+  @include pesudo.create($cn);
 
   .#{$cn} {
     color: var(--#{$cn});
   }
 
   // Background Color
-  @include action.create(bg-#{$cn});
-  @include child.create(bg-#{$cn});
+  @include pesudo.create(bg-#{$cn});
+
   .bg-#{$cn} {
     background-color: var(--#{$cn});
   }
 
   // Border Color
-  @include action.create(br-#{$cn});
-  @include child.create(br-#{$cn});
+  @include pesudo.create(br-#{$cn});
+
   .br-#{$cn} {
     border-color: var(--#{$cn});
+  }
+
+  // Border side colors
+  @each $k, $v in (t: top, l: left, r: right, b: bottom) {
+    @include pesudo.create(br#{$k}-#{$cn});
+    .br#{$k}-#{$cn} {
+      border-#{$v}-color: var(--#{$cn}) !important;
+    }
   }
 
   @for $i from 1 through 6 {
     $ccn: #{$cn}-#{$i};
 
-    @include action.create($ccn);
-    @include child.create($ccn);
+    @include pesudo.create($ccn);
 
     .#{$ccn} {
       color: var(--#{$ccn});
     }
 
-    @include action.create(bg-#{$ccn});
-    @include child.create(bg-#{$ccn});
+    @include pesudo.create(bg-#{$ccn});
+
     .bg-#{$ccn} {
       background-color: var(--#{$ccn});
     }
 
     // Border Colors
-    @include action.create(br-#{$ccn});
-    @include child.create(br-#{$ccn});
+    @include pesudo.create(br-#{$ccn});
+
     .br-#{$ccn} {
       border-color: var(--#{$ccn});
     }
 
     // Border side colors
-    @each $k, $v in () {
-      @include action.create(br-#{$ccn});
-      @include child.create(br-#{$ccn});
+    @each $k, $v in (t: top, l: left, r: right, b: bottom) {
+      @include pesudo.create(br#{$k}-#{$ccn});
+
       .br#{$k}-#{$ccn} {
         border-#{$v}-color: var(--#{$ccn});
       }
@@ -77,14 +82,30 @@ $__builtin: (
   }
 }
 
-@mixin builtinRoot() {
+@mixin __builtinRoot() {
   @each $k, $v in $__builtin {
-    @include root($k, $v);
+    @include __root($k, $v);
   }
 }
 
-@mixin builtinClass() {
+@mixin __builtinClass() {
   @each $k, $v in $__builtin {
-    @include class($k);
+    @include __class($k);
+  }
+}
+
+@mixin createColorClasses() {
+  @include __class(primary);
+  @include __class(accent);
+  @include __class(warn);
+  @include __builtinClass();
+}
+
+@mixin createColorRoot($primary, $accent, $warn) {
+  :root {
+    @include __root(primary, $primary);
+    @include __root(accent, $accent);
+    @include __root(warn, $warn);
+    @include __builtinRoot();
   }
 }

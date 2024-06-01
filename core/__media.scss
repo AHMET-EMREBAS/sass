@@ -1,0 +1,34 @@
+$__medias: (
+  xs: "max-width: 575px",
+  mxs: "min-width: 575px",
+  sm: "(min-width: 576px) and ( max-width: 767px)",
+  msm: "min-width: 767px",
+  lsm: "max-width: 576px",
+
+  md: "(min-width: 768px) and ( max-width: 991px)",
+  mmd: "min-width: 991px",
+  lmd: "max-width: 768px",
+
+  lg: "(min-width: 992px) and ( max-width: 1199px)",
+  mlg: "min-width: 1199px",
+  llg: "max-width: 992px",
+
+  xl: "(min-width: 1200px) and ( max-width: 1399px)",
+  mxl: "min-width: 1399px",
+  lxl: "max-width: 1200px",
+
+  xxl: "min-width: 1400px",
+  lxxl: "max-width: 1400px",
+);
+
+@mixin createMediaClasses($cn, $properties) {
+  @each $mn, $con in $__medias {
+    @media screen and (#{$con}) {
+      [class~="#{$mn}:#{$cn}"] {
+        @each $k, $v in $properties {
+          #{$k}: #{$v};
+        }
+      }
+    }
+  }
+}

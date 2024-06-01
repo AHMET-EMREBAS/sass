@@ -1,0 +1,84 @@
+@use "_media" as media;
+
+// Percent %
+@for $i from 0 through 12 {
+  $cn: "w-" + $i;
+  $value: #{$i * 8%};
+
+  .#{$cn} {
+    width: #{$value};
+  }
+  @include media.createMediaClasses(
+    $cn,
+    (
+      width: #{$value},
+    )
+  );
+}
+// VW
+@for $i from 0 through 12 {
+  $cn: "vw-" + $i;
+  $value: #{$i * 8vw};
+
+  .#{$cn} {
+    width: #{$value};
+  }
+  @include media.createMediaClasses(
+    $cn,
+    (
+      width: #{$value},
+    )
+  );
+}
+// VH
+@for $i from 0 through 12 {
+  $cn: "vh-" + $i;
+  $value: #{$i * 8vw};
+
+  .#{$cn} {
+    height: #{$value};
+  }
+  @include media.createMediaClasses(
+    $cn,
+    (
+      height: #{$value},
+    )
+  );
+}
+
+// Pixel W
+@for $i from 0 through 12 {
+  $cn: "w-" + $i + "x";
+  $value: #{$i * 32px};
+
+  .#{$cn} {
+    width: #{$value};
+  }
+  @include media.createMediaClasses(
+    $cn,
+    (
+      width: #{$value},
+    )
+  );
+}
+
+// Pixel H
+@for $i from 0 through 12 {
+  $cn: "h-" + $i + "x";
+  $value: #{$i * 32px};
+
+  .#{$cn} {
+    height: #{$value};
+  }
+  @include media.createMediaClasses(
+    $cn,
+    (
+      height: #{$value},
+    )
+  );
+
+  .square-#{$i} {
+    width: #{$value};
+    height: #{$value};
+  }
+}

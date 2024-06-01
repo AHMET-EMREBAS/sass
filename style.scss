@@ -3,7 +3,18 @@
 @include core.createColorRoot(royalblue, pink, orange);
 @include core.createColorClasses();
 
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+}
+
 * {
+  box-sizing: border-box;
   border-color: transparent;
   border-width: 3px;
   border-style: solid;

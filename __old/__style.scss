@@ -1,0 +1,37 @@
+@use "media" as media;
+@use "space" as space;
+@use "color" as color;
+@use "font" as font;
+@use "border" as border;
+
+@include space.createSpaces();
+@include space.createSizes();
+@include media.createMedias();
+@include font.createFonts();
+@include border.createBorders();
+
+@include color.create(
+  (
+    primary: royalblue,
+    accent: purple,
+    warn: orangered,
+    error: crimson,
+    info: teal,
+    success: green,
+    black: black,
+    gray: gray,
+    white: white,
+  )
+);
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+}
+* {
+  box-sizing: border-box;
+}

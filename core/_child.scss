@@ -1,5 +1,0 @@
-@mixin create($cn) {
-  [class~="#{$cn}::"] > * {
-    @extend .#{$cn};
-  }
-}
