@@ -1,0 +1,14 @@
+@use "index" as color;
+
+@include color.create(
+  (
+    primary: royalblue,
+    accent: pink,
+    warn: orange,
+    error: crimson,
+    info: teal,
+    success: green,
+    white: white,
+    black: black,
+  )
+);

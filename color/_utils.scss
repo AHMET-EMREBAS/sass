@@ -1,0 +1,24 @@
+@use "../utils/" as utils;
+
+$variants: utils.range(1, 6, 1);
+
+$classes: (
+  bg: background-color,
+  color: color,
+);
+
+@function colorValue($color, $variant) {
+  @if ($variant > 3) {
+    @return darken($color, ($variant - 3) * 10%);
+  } @else {
+    @return lighten($color, (4 - $variant) * 10%);
+  }
+}
+
+@function name($name, $variant: "") {
+  @if ($variant == "") {
+    @return "#{$name}";
+  } @else {
+    @return "#{$name}-#{$variant}";
+  }
+}

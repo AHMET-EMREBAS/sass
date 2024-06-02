@@ -1,0 +1,13 @@
+@use "core" as core;
+
+@mixin create($colors) {
+  @each $colorName, $value in $colors {
+    @include core.cls($colorName);
+  }
+
+  :root {
+    @each $colorName, $value in $colors {
+      @include core.root($colorName, $value);
+    }
+  }
+}

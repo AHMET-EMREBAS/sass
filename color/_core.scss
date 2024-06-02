@@ -1,0 +1,25 @@
+@use "utils" as utils;
+
+@mixin cls($name) {
+  @each $spn, $pn in utils.$classes {
+    $cn: utils.name("#{$spn}-#{$name}");
+
+    .#{$cn} {
+      #{$pn}: var(--#{$name});
+    }
+
+    @each $i in utils.$variants {
+      .#{utils.name($cn, $i)} {
+        #{$pn}: var(--#{$name}-#{$i});
+      }
+    }
+  }
+}
+
+@mixin root($name, $value) {
+  --#{utils.name($name)}: #{$value};
+
+  @each $i in utils.$variants {
+    --#{utils.name($name, $i)}: #{utils.colorValue($value, $i)};
+  }
+}

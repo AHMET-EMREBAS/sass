@@ -1,0 +1,8 @@
+// Function to generate a range list
+@function range($start, $end, $step: 1) {
+  $list: ();
+  @for $i from $start through $end {
+    $list: append($list, $i);
+  }
+  @return $list;
+}
