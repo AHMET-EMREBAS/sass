@@ -1,0 +1,7 @@
+@use "color" as color;
+
+@include color.create(
+  (
+    primary: blue,
+  )
+);

@@ -6,3 +6,46 @@
   }
   @return $list;
 }
+
+@function pesudoSelector($cn, $pesudo) {
+  @return '[class~="#{$cn}:#{$pesudo}"]:#{$pesudo}';
+}
+
+@function childSelector($cn) {
+  @return '[class~="#{$cn}::"] > *';
+}
+
+@function childPesudoSelector($cn, $pesudo) {
+  @return '[class~="#{$cn}::#{$pesudo}"] > *:#{$pesudo}';
+}
+
+@function oddSelector($cn) {
+  @return '[class~="#{$cn}:odd"]:nth-child(odd)';
+}
+
+@function evenSelector($cn) {
+  @return '[class~="#{$cn}:even"]:nth-child(even)';
+}
+
+@function oddChildSelector($cn) {
+  @return '[class~="#{$cn}::odd"] > *:nth-child(odd)';
+}
+
+@function evenChildSelector($cn) {
+  @return '[class~="#{$cn}::even"] > *:nth-child(even)';
+}
+
+@mixin actionPesudoClasses($cn, $pn) {
+  #{pesudoSelector($cn, "hover")},
+  #{pesudoSelector($cn, "active")},
+  #{pesudoSelector($cn, "focus")} {
+    #{$pn}: var(--#{$cn});
+  }
+}
+
+@mixin positionPesudoClasses($cn, $pn) {
+  #{pesudoSelector($cn, "first-child")},
+  #{pesudoSelector($cn, "last-child")} {
+    #{$pn}: var(--#{$cn});
+  }
+}

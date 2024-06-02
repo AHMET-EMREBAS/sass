@@ -1,0 +1,9 @@
+@use "../utils" as util;
+
+@mixin create($cn, $pn) {
+  #{util.pesudoSelector($cn, "hover")},
+  #{util.pesudoSelector($cn, "active")},
+  #{util.pesudoSelector($cn, "focus")} {
+    #{$pn}: var(--#{$cn});
+  }
+}
